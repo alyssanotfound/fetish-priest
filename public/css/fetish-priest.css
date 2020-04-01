@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+
 }
 html { 
   background: url("../imgs/fetish-priest.jpeg") no-repeat center center fixed; 
@@ -18,6 +19,20 @@ html {
 		background-size: cover;
 	}
 }
+
+.circle {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	background-color: blue;
+	border-radius: 50%;
+}
+
+.bertoia {
+	left: 20%;
+	top: 5%;
+}
+
 /*#image-container {
 	height: 100%;
 	width: 100%;
