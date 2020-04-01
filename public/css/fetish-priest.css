@@ -14,25 +14,17 @@ html, body {
 }
 
 #img { 
-	position:relative;
-	/*background: url("../imgs/fetish-priest.jpeg") no-repeat center center fixed; */
+	background: url("../imgs/fetish-priest.jpeg") no-repeat center center fixed; 
 	height: 100%;
-	/*min-width: 550px;*/
-	/*-webkit-background-size: cover;
+	min-width: 550px;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;*/
-
-
-	background-position: left top;
-	background-image: url(../imgs/fetish-priest.jpeg);
-	background-size: auto 100%;
-	background-attachment: fixed;
-	background-repeat:no-repeat;
+	background-size: cover;
 }
 
 
-/*@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 	#img { 
 		background: url("../imgs/fetish-priest-vert.jpeg") no-repeat center center fixed; 
 		height: 100%;
@@ -41,34 +33,42 @@ html, body {
 		-o-background-size: cover;
 		background-size: cover;
 	}
-}*/
+}
 
 .circle {
 	position: absolute;
 	height: 30px;
 	width: 30px;
 	background-color: blue;
-	border-radius: 50%;	
-    top:0; 
-    left:0;
-    
+	border-radius: 50%;
 }
 
 .bertoia {
-	margin-left:15%;
-    margin-top:3%;
+	left: 10%;
+	top: 4%;
 }
 
-/*#image-container {
-	height: 100%;
-	width: 100%;
-	position: absolute;
+.knoll {
+	left: 20%;
+	top: 15%;
 }
-#background-image {
-  background-image: url("../imgs/fetish-priest.jpeg");  
-  background-color: #cccccc;
-  background-position: center top; 
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  position: relative;
-}*/
+
+.paulin {
+	left: 40%;
+	top: 30%;
+}
+
+.hesterberg {
+	left: 50%;
+	top: 70%;
+}
+
+.piretti {
+	left: 70%;
+	top: 55%;
+}
+
+.bertoiaII {
+	left: 85%;
+	top: 60%;
+}
