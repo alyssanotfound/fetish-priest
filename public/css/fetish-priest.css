@@ -70,14 +70,19 @@ html, body {
 		background-size: cover;
 	}
 
+	.circle {
+		height: 22px;
+		width: 22px;
+	}
+
 	.bertoia {
 		left: 12%;
-		top: 55%;
+		top: 62%;
 	}
 
 	.knoll {
 		left: 21%;
-		top: 63%;
+		top: 70%;
 	}
 
 	.paulin {
