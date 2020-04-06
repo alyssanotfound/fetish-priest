@@ -1,9 +1,15 @@
-html, body {
+html {
   margin: 0px;
-  height:100vh;
-  min-height: 100%;
-  width: 100%;
+  /*height:100vh;*/
+  /*min-height: 100%;*/
+  /*width: 100%;*/
   padding: 0;
+  background: url("../imgs/fetish-priest.jpeg") no-repeat center center fixed; 
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 #container {
@@ -70,6 +76,20 @@ html, body {
 		-o-background-size: cover;
 		background-size: cover;
 	}
+
+	html {
+  margin: 0px;
+  /*height:100vh;*/
+  /*min-height: 100%;*/
+  /*width: 100%;*/
+  padding: 0;
+  background: url("../imgs/fetish-priest-vert.jpeg") no-repeat center center fixed; 
+	height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 	.circle {
 		height: 22px;
