@@ -25,7 +25,7 @@ html {
 }
 
 .circle {
-	position: absolute;
+	position: relative;
 	background: url("../assets/button.png") left center no-repeat; 
 	background-size: 30px 30px;
 	-webkit-background-size: cover;
@@ -34,34 +34,61 @@ html {
 	background-size: cover;
 	height: 30px;
 	width: 30px;
+	display: block;
+	margin: auto;
 }
 
-.bertoia {
+.desc {
+	position: relative;
+	display: block;
+	margin: auto;
+	border-radius: 25px;
+	background: blue;
+	padding: 0; 
+	width: 130px;
+	height: 30px; 
+	line-height: 30px;
+	margin-top: 10px; 
+	text-align: center;
+	font-size: 0.5em !important;
+}
+
+.wrap {
+	position: absolute;
+	width: 130px;
+	height: 70px;
+}
+
+.hidden {
+	display: none;
+}
+
+#bertoia-wrapper {	
 	left: 21%;
 	top: 1%;
 }
 
-.knoll {
+#knoll-wrapper {
 	left: 28%;
 	top: 13%;
 }
 
-.paulin {
+#paulin-wrapper {
 	left: 49%;
 	top: 29%;
 }
 
-.hesterberg {
+#hesterberg-wrapper {
 	left: 50%;
 	top: 70%;
 }
 
-.piretti {
+#piretti-wrapper {
 	left: 71%;
 	top: 48%;
 }
 
-.bertoiaII {
+#bertoiaII-wrapper {
 	left: 84%;
 	top: 73%;
 }
@@ -74,14 +101,25 @@ img {
 }
 
 .info {
-	font-family: 'Trim', Arial;
-	position: absolute;
 	top: 28%;
 	right: 0;
-	color: white;
-	background-color: black;
-	font-size: 0.8em;
 	padding: 5px;
+	background-color: black;
+}
+
+.shop {
+	top: 4%;
+	left: 0;
+	background-color: black;
+	padding: 5px;
+	padding-right: 100px !important;
+}
+
+.text {
+	font-family: 'Trim', Arial;
+	position: absolute;
+	color: white;
+	font-size: 0.6em;
 }
 
 .yellow {
@@ -107,32 +145,47 @@ img {
 		background-size: 22px 22px;
 	}
 
-	.bertoia {
+	.desc {
+		position: relative;
+		display: block;
+		margin: auto;
+		border-radius: 25px;
+		background: blue;
+		padding: 0; 
+		width: 130px;
+		height: 30px; 
+		line-height: 30px;
+		margin-top: 10px; 
+		text-align: center;
+		font-size: 0.2em !important;
+	}
+
+	#bertoia-wrapper {
 		left: 18%;
 		top: 54%;
 	}
 
-	.knoll {
+	#knoll-wrapper {
 		left: 26%;
 		top: 62%;
 	}
 
-	.paulin {
+	#paulin-wrapper {
 		left: 47%;
 		top: 68%;
 	}
 
-	.hesterberg {
+	#hesterberg-wrapper {
 		left: 51%;
 		top: 84%;
 	}
 
-	.piretti {
+	#piretti-wrapper {
 		left: 72%;
 		top: 77%;
 	}
 
-	.bertoiaII {
+	#bertoiaII-wrapper {
 		left: 86%;
 		top: 88%;
 	}
