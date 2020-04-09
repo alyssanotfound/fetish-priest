@@ -21,7 +21,7 @@ $(function() {
 });
 
 $(function() {
-    $( ".circle" ).click(function() {
+    $( "#bertoia-wrapper .circle" ).click(function() {
 		if (buttonson == true && descon == false) {  
 			console.log("show descriptions");		
     		$( ".desc" ).removeClass('hidden');
