@@ -108,7 +108,7 @@ img {
 .info {
 	top: 28%;
 	right: 0;
-	padding: 5px;
+	padding: 1%;
 	background-color: black;
 }
 
@@ -177,6 +177,7 @@ a.yellow {
 	.info-mobile {
 		display: block;
 		line-height: 15px;
+		width: 98%;
 	}
 
 	.info-desktop {
