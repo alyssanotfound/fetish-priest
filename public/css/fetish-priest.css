@@ -98,10 +98,11 @@ html {
 }
 
 img {
-  clip-path: circle(50%);
-  position: absolute;
-  top: 18%;
-  right: 1%;
+	-webkit-clip-path: circle(50%);
+	clip-path: circle(50%);
+	position: absolute;
+	top: 18%;
+	right: 1%;
 }
 
 .info {
