@@ -178,10 +178,12 @@ a.yellow {
 		top: 11%;
 	}
 
+
 	.info-mobile {
 		display: block;
 		line-height: 15px;
 		width: 98%;
+		text-align: right;
 	}
 
 	.info-desktop {
@@ -218,8 +220,8 @@ a.yellow {
 	}
 
 	#bertoiaII-wrapper {
-		left: 77%;
-		top: 88%;
+		left: 67%;
+		top: 85%;
 	}
 }
 
