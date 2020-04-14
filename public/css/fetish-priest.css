@@ -140,7 +140,7 @@ img {
 .text {
 	font-family: 'Trim', Arial;
 	color: white;
-	font-size: 0.6em;
+	font-size: 0.7vw;
 }
 
 a.yellow {
@@ -169,6 +169,10 @@ a.yellow {
 		background-size: cover;
 	}
 
+	.text {
+		font-size: 2vw;
+	}
+	
 	.circle {
 		height: 22px;
 		width: 22px;
