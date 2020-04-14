@@ -103,6 +103,7 @@ html {
 	position: absolute;
 	top: 28%;
 	right: 0;
+	width: auto;
 }
 
 .logo {
@@ -192,6 +193,10 @@ a.yellow {
 	.shop {
 		top: 11%;
 		position: absolute;
+	}
+
+	.info-wrapper {
+		width: 100%;
 	}
 
 	.info-mobile {
