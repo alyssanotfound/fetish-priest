@@ -186,7 +186,7 @@ a.yellow {
 		border-radius: 25px;
 		background: blue;
 		padding: 0; 
-		width: 112px;
+		width: 160px;
 		height: 12px; 
 		line-height: 12px;
 		margin-top: 5px; 
@@ -233,7 +233,7 @@ a.yellow {
 	}
 
 	#hesterberg-wrapper {
-		left: 37%;
+		left: 30%;
 		top: 85%;
 	}
 
