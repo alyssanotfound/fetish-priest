@@ -101,7 +101,7 @@ html {
 
 .info-wrapper {
 	position: absolute;
-	top: 28%;
+	top: 25%;
 	right: 0;
 	width: auto;
 }
@@ -186,12 +186,12 @@ a.yellow {
 		border-radius: 25px;
 		background: blue;
 		padding: 0; 
-		width: 160px;
+		width: 130px;
 		height: 12px; 
 		line-height: 12px;
 		margin-top: 5px; 
 		text-align: center;
-		font-size: 3vw !important;
+		font-size: 2vw !important;
 	}
 
 	.shop {
