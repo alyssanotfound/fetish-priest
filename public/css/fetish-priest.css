@@ -170,7 +170,7 @@ a.yellow {
 	}
 
 	.text {
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 
 	.circle {
@@ -186,12 +186,12 @@ a.yellow {
 		border-radius: 25px;
 		background: blue;
 		padding: 0; 
-		width: 115px;
-		height: 12px; 
-		line-height: 12px;
+		width: 50px;
+		height: 30px; 
+		line-height: 30px;
 		margin-top: 5px; 
 		text-align: center;
-		font-size: 2vw !important;
+		font-size: 3vw !important;
 	}
 
 	.shop {
