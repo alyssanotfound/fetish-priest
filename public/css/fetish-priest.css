@@ -14,12 +14,20 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 html {
 	margin: 0px;
 	padding: 0;
-	background: url("../imgs/fetish-priest.jpeg") no-repeat center center fixed; 
+	background: url("../imgs/fetish-priest.jpeg"); 
+	background-repeat: no-repeat;
 	height: 100%;
-	-webkit-background-size: cover;
+	background-size: auto 100%;
+	background-position: right bottom;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
+}
+
+body {
+	height: 100%;
+	margin: 0;
 }
 
 #container {
@@ -130,11 +138,25 @@ img {
 
 .shop {
 	position: absolute;
-	top: 4%;
+	top: 0;
 	left: 0;
+	background-color: blue;
+	width: 25%;
+	height: 4%;
+}
+
+.shop p {
+	margin-left: 30px;
+}
+
+.textbox {
+	position: absolute;
+	top: 4%;
+	width: 25%;
+	height: 96%;
+	margin-left: 0;
 	background-color: black;
-	padding: 5px;
-	padding-right: 100px !important;
+	left: 0;
 }
 
 .text {
