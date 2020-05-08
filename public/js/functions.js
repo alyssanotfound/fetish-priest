@@ -8,9 +8,25 @@ jQuery(document).ready(function($) {
     var ww = document.body.clientWidth;
     if (ww < 600) {
       $(".textbox").addClass("hidden");
+      $("#readmore").addClass("hidden");
+      $("#references").removeClass("hidden");
+      $(".toggletext").each(function(){
+            $(".toggletext").removeClass("hidden");
+            $('.number3').css("color", "white");
+            $('.highlight').css("color", "yellow");
+            textOnDesktop = true;
+       });
     } else if (ww >= 601) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height("96%");
+      $("#readmore").removeClass("hidden");
+      $("#references").addClass("hidden");
+      $(".toggletext").each(function() {
+            $(".toggletext").addClass("hidden");
+            $('.number3').css("color", "black");
+            $('.highlight').css("color", "white");
+            textOnDesktop = false;
+       });
     };
   };
   $(window).resize(function(){
@@ -51,13 +67,10 @@ $(function() {
 //INFO BUTTON - MOBILE
 $(function() {
     $( ".info-button" ).click(function() {
-        // console.log("info clicked on mobile, reveal block");
-
         if ($(".textbox").hasClass("hidden")==true) {
             $(".textbox").removeClass("hidden");
-            $(".textbox").height(($(window).height() - 210) +"px");
+            $(".textbox").height(($(window).height() - 150) +"px");
             $('.info-button').css("background-image", "url(../public/assets/info-button-x.png");
-            // console.log("height of textbox is : " + ($(window).height() - 210));
         } else if ($(".textbox").hasClass("hidden")==false) {
             $(".textbox").addClass("hidden");
             $('.info-button').css("background-image", "url(../public/assets/info-button.png");
@@ -68,10 +81,8 @@ $(function() {
 //READ MORE BUTTON - DESKTOP 
 $(function() {
     $( "#readmore" ).click(function() {
-        // console.log("toggle text");
         if (textOnDesktop==false) {
             $(".toggletext").each(function(){
-                // console.log("text isnt visible, turn on");
                 $(".toggletext").removeClass("hidden");
                 $('.number3').css("color", "white");
                 $('.highlight').css("color", "yellow");
@@ -79,13 +90,38 @@ $(function() {
             });
         } else {
             $(".toggletext").each(function() {
-                // console.log("turn off text");
                 $(".toggletext").addClass("hidden");
                 $('.number3').css("color", "black");
                 $('.highlight').css("color", "white");
                 textOnDesktop = false;
             });
         }
+    });
+});
+
+//HOVER FUNCTIONALITY - DESKTOP
+$(function() {
+    $( "#readmore" ).hover(
+      function() {
+        $(".toggletext").removeClass( "hidden" );
+        $('.number3').css("color", "white");
+        $('.highlight').css("color", "yellow");
+      }, function() {
+        console.log("hide");
+        if (textOnDesktop == false){
+            $(".toggletext").addClass( "hidden" );
+            $('.number3').css("color", "black");
+            $('.highlight').css("color", "white");
+        }
+      }
+    );
+});
+
+//LOGO / SUBSCRIBE BUTTON - DESKTOP
+$(function() {
+    $(".logo").click(function(){
+        console.log("logo clicked");
+        $("#mc_embed_signup").toggle();
     });
 });
 

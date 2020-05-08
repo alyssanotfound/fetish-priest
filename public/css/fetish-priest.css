@@ -12,6 +12,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 
 html {
+	top:0;
 	margin: 0px;
 	padding: 0;
 	background: url("../imgs/fetish-priest.jpeg"); 
@@ -28,6 +29,7 @@ html {
 body {
 	height: 100%;
 	margin: 0;
+	overflow: hidden;
 }
 
 #container {
@@ -111,14 +113,14 @@ body {
 	position: absolute;
 	top: 25%;
 	right: 0;
-	width: auto;
+	width: 45%;
 }
 
 .logo {
 	position: relative;
 	float: right;
-	margin-top: 10px;
 	margin-right: 20px;
+	margin-top: 10px;
 }
 
 img {
@@ -147,6 +149,12 @@ img {
 
 .shop p {
 	margin-left: 30px;
+	width: 24px;
+}
+
+.shop p:hover {
+ 	background-color: yellow;
+ 	color: blue;
 }
 
 .textbox {
@@ -164,11 +172,26 @@ img {
 	padding-right: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	font-size: 0.6vw;
+	font-size: 0.7vw;
 }
 
-.textbox p span {
+.textbox p .highlight-II {
 	color: yellow;
+}
+
+.textbox p .highlightnum:hover {
+ 	background-color: white;
+ 	color: black !important; 
+}
+
+.info-desktop a:hover {
+	background-color: white;
+	color: black;
+}
+
+#mc-embedded-subscribe:hover {
+	background-color: white;
+	color: black;
 }
 
 p.yellowbox {
@@ -210,7 +233,65 @@ a.yellow {
 
 .info-desktop {
 	display: block;
+	width: 595px;
+	padding-left: 116px;
 }
+
+#readmore {
+	position: absolute;
+	bottom: 10px;
+}
+
+#mc_embed_signup {
+	position: relative;
+	float: right;
+	font-family: 'Trim', Arial;
+	margin-right: 0;
+	z-index: -1;
+	display: none;
+	margin-top: 10px;
+	margin-right: -70px;
+}
+
+#mc_embed_signup input {
+	background-color: yellow;
+	font-family: 'Trim', Arial;
+	outline: none;
+	border: none;
+	color: black;
+	padding: 7px;
+	font-size: 0.7vw;
+	width: 170px;
+}
+
+#mc_embed_signup #mc-embedded-subscribe {
+	background-color: black;
+	color: white;
+	margin-top: 5px;
+	width: 265px;
+	text-align: left;
+}
+
+#mc_embed_signup #mce-LNAME {
+	border-bottom: dashed;
+	border-color: black;
+	border-width: thin;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+ color: black;
+}
+
+::-ms-input-placeholder { 
+ color: black;
+}
+
+
 
 @media only screen and (max-width: 600px) {
 	
@@ -259,10 +340,10 @@ a.yellow {
 		padding: 0; 
 		width: 50px;
 		height: 30px; 
-		line-height: 30px;
+		line-height: 15px;
 		margin-top: 5px; 
 		text-align: center;
-		font-size: 3vw !important;
+		font-size: 1.5vw !important;
 	}
 
 	.shop {
@@ -274,6 +355,7 @@ a.yellow {
 
 	.shop p {
 		margin-left: 22%;
+		width: 37px;
 	}
 
 	.info-wrapper {
@@ -281,17 +363,12 @@ a.yellow {
 		top: 90px;
 	}
 
-	.logo {
-		position: absolute;
-		top: -80px;
-		left: 10px;
-	}
-
 	.info-mobile {
 		display: block;
-		line-height: 25px;
+		line-height: 17px;
+		padding-top: 14px;
 		width: 98%;
-		height: 50px;
+		height: 42px;
 	}
 
 	.info-desktop {
@@ -302,8 +379,46 @@ a.yellow {
 		width: 50%;
 		right: 0;
 		margin-left: auto;
-		top: 210px;
+		top: 150px;
 		height: 0px;
+	}
+
+	.textbox p {
+		font-size: 1.6vw;
+		padding: 5px;
+	}
+
+	p.yellowbox {
+		margin: 0;
+		height:50px;
+	}
+
+	.logo {
+		position: absolute;
+		top: -80px;
+		left: 10px;
+	}
+
+	#mc_embed_signup {
+		position: absolute;
+		top: -85px;
+		left: 80px;
+	}
+
+	#mc_embed_signup input {
+		padding: 5px;
+		font-size: 3vw;
+	}
+
+	#mc_embed_signup #mc-embedded-subscribe {
+		position: absolute;
+		text-align: left;
+		padding-top: 20px;
+		padding-bottom: 19px;
+		margin-left: 180px;
+		top: -5px;
+		width: 150px;
+		z-index: 100;
 	}
 
 	.hidden {
