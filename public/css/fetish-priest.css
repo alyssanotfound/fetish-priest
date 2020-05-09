@@ -15,18 +15,6 @@ html {
 	top:0;
 	margin: 0px;
 	padding: 0;
-	/*background: url("../imgs/fetish-priest.jpg"); */
-	/*background-repeat: no-repeat;
-	height: 100%;
-	background-size: auto 100%;
-	background-position: right bottom;*/
-	background: url("../imgs/fetish-priest.jpg") no-repeat center center fixed; 
-	/*width: 75%;*/
-	background-size: 75% auto;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 
 body {
@@ -35,10 +23,19 @@ body {
 	overflow: hidden;
 }
 
-#container {
-	width: 100%;
+
+#background-img {
+	position: absolute;
 	height: 100%;
-	overflow: hidden;
+	width: 75%;
+	background: url("../imgs/fetish-priest.jpg"); 
+	left: 25%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
 }
 
 .circle {
@@ -329,12 +326,16 @@ a.yellow {
 	html {
 		margin: 0px;
 		padding: 0;
-		background: url("../imgs/fetish-priest-vert.jpg") no-repeat center center fixed; 
+		background: url("../imgs/fetish-priest-vert.jpg") fixed center center; 
 		height: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+	}
+
+	#background-img {
+		display: none;
 	}
 
 	.text {
