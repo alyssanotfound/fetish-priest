@@ -15,7 +15,7 @@ html {
 	top:0;
 	margin: 0px;
 	padding: 0;
-	background: url("../imgs/fetish-priest.jpeg"); 
+	background: url("../imgs/fetish-priest.jpg"); 
 	background-repeat: no-repeat;
 	height: 100%;
 	background-size: auto 100%;
@@ -56,7 +56,7 @@ body {
 	position: relative;
 	display: block;
 	margin: auto;
-	border-radius: 25px;
+	border-radius: 5px;
 	background: blue;
 	padding: 0; 
 	width: 130px;
@@ -67,6 +67,10 @@ body {
 	font-size: 0.5em !important;
 }
 
+.break {
+	display: none;
+}
+
 .wrap {
 	position: absolute;
 	width: 130px;
@@ -75,6 +79,10 @@ body {
 
 .hidden {
 	visibility: hidden;
+}
+
+.remove {
+	display: none;
 }
 
 #bertoia-wrapper {	
@@ -150,6 +158,8 @@ img {
 .shop p {
 	margin-left: 30px;
 	width: 24px;
+	clear: both;
+   	float: left;
 }
 
 .shop p:hover {
@@ -185,11 +195,6 @@ img {
 }
 
 .info-desktop a:hover {
-	background-color: white;
-	color: black;
-}
-
-#mc-embedded-subscribe:hover {
 	background-color: white;
 	color: black;
 }
@@ -233,8 +238,9 @@ a.yellow {
 
 .info-desktop {
 	display: block;
-	width: 595px;
+	width: 625px;
 	padding-left: 116px;
+	text-align: right;
 }
 
 #readmore {
@@ -242,12 +248,13 @@ a.yellow {
 	bottom: 10px;
 }
 
+/* MAILING LIST SUBSCRIPTION */
 #mc_embed_signup {
 	position: relative;
 	float: right;
 	font-family: 'Trim', Arial;
 	margin-right: 0;
-	z-index: -1;
+	/*z-index: -1;*/
 	display: none;
 	margin-top: 10px;
 	margin-right: -70px;
@@ -259,23 +266,44 @@ a.yellow {
 	outline: none;
 	border: none;
 	color: black;
-	padding: 7px;
+	padding: 8px;
 	font-size: 0.7vw;
 	width: 170px;
-}
-
-#mc_embed_signup #mc-embedded-subscribe {
-	background-color: black;
-	color: white;
-	margin-top: 5px;
-	width: 265px;
-	text-align: left;
 }
 
 #mc_embed_signup #mce-LNAME {
 	border-bottom: dashed;
 	border-color: black;
 	border-width: thin;
+}
+
+#mc_embed_signup .subwrapper {
+	background-color: black;
+	color: white;
+	margin-top: 5px;
+	width: 265px;
+	height: 27px;
+	text-align: left;
+}
+
+#mc_embed_signup .subcontents {
+	clear:both;
+   	float:left;
+   	/*height: 20px;*/
+   	margin-top: 2px;
+   	margin-left: 5px;
+}
+
+#mc_embed_signup #mc-embedded-subscribe {
+	background-color: black;
+	color: white;
+   	width: auto;
+   	padding: 0px;
+}
+
+#mc_embed_signup #mc-embedded-subscribe:hover {
+	background-color: white;
+	color: black;
 }
 
 ::placeholder {
@@ -290,7 +318,7 @@ a.yellow {
 ::-ms-input-placeholder { 
  color: black;
 }
-
+/* END MAILING LIST SUBSCRIPTION */
 
 
 @media only screen and (max-width: 600px) {
@@ -298,7 +326,7 @@ a.yellow {
 	html {
 		margin: 0px;
 		padding: 0;
-		background: url("../imgs/fetish-priest-vert.jpeg") no-repeat center center fixed; 
+		background: url("../imgs/fetish-priest-vert.jpg") no-repeat center center fixed; 
 		height: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -314,6 +342,10 @@ a.yellow {
 		height: 22px;
 		width: 22px;
 		background-size: 22px 22px;
+	}
+
+	.break {
+		display: block;
 	}
 
 	.info-button {
@@ -335,12 +367,11 @@ a.yellow {
 		position: relative;
 		display: block;
 		margin: auto;
-		border-radius: 25px;
 		background: blue;
 		padding: 0; 
-		width: 50px;
-		height: 30px; 
-		line-height: 15px;
+		width: 67px;
+		height: 24px; 
+		line-height: 12px;
 		margin-top: 5px; 
 		text-align: center;
 		font-size: 1.5vw !important;
@@ -355,7 +386,7 @@ a.yellow {
 
 	.shop p {
 		margin-left: 22%;
-		width: 37px;
+		width: auto;
 	}
 
 	.info-wrapper {
@@ -415,14 +446,25 @@ a.yellow {
 		text-align: left;
 		padding-top: 20px;
 		padding-bottom: 19px;
-		margin-left: 180px;
 		top: -5px;
 		width: 150px;
 		z-index: 100;
+		padding-left: 10px;
 	}
 
-	.hidden {
-		visibility: hidden;
+	#mc_embed_signup .subcontents {
+		margin: 0;
+	}
+
+	#mc_embed_signup .subwrapper {
+		background-color: transparent;
+		height: 19px;
+		position: absolute;
+		padding-top: 20px;
+		padding-bottom: 19px;
+		margin-left: 180px;
+		top: 0;
+		width: 150px;
 	}
 	
 	#bertoia-wrapper {

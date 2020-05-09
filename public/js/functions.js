@@ -16,6 +16,7 @@ jQuery(document).ready(function($) {
             $('.highlight').css("color", "yellow");
             textOnDesktop = true;
        });
+      $(".dash").addClass("remove");
     } else if (ww >= 601) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height("96%");
@@ -27,6 +28,7 @@ jQuery(document).ready(function($) {
             $('.highlight').css("color", "white");
             textOnDesktop = false;
        });
+      $(".dash").removeClass("remove");
     };
   };
   $(window).resize(function(){
