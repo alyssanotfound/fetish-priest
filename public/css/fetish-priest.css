@@ -15,15 +15,18 @@ html {
 	top:0;
 	margin: 0px;
 	padding: 0;
-	background: url("../imgs/fetish-priest.jpg"); 
-	background-repeat: no-repeat;
+	/*background: url("../imgs/fetish-priest.jpg"); */
+	/*background-repeat: no-repeat;
 	height: 100%;
 	background-size: auto 100%;
-	background-position: right bottom;
-	/*-webkit-background-size: cover;
+	background-position: right bottom;*/
+	background: url("../imgs/fetish-priest.jpg") no-repeat center center fixed; 
+	/*width: 75%;*/
+	background-size: 75% auto;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;*/
+	background-size: cover;
 }
 
 body {
