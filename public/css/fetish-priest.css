@@ -40,7 +40,7 @@ body {
 
 .circle {
 	position: relative;
-	background: url("../assets/button.png") left center no-repeat; 
+	background: url("./assets/button.png") left center no-repeat; 
 	background-size: 30px 30px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -393,7 +393,7 @@ a.yellow {
 	.info-button {
 		z-index: 100;
 		position: absolute;
-		background: url("../assets/info-button.png") left center no-repeat; 
+		background: url("./assets/info-button.png") left center no-repeat; 
 		background-size: 30px 30px;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
