@@ -71,6 +71,10 @@ body {
 	display: none;
 }
 
+.breakdesktop {
+	display: block;
+}
+
 .wrap {
 	position: absolute;
 	width: 130px;
@@ -131,6 +135,10 @@ body {
 	margin-top: 10px;
 }
 
+.logo img {
+	cursor: pointer;
+}
+
 img {
 	-webkit-clip-path: circle(50%);
 	clip-path: circle(50%);
@@ -157,14 +165,23 @@ img {
 
 .shop p {
 	margin-left: 30px;
-	width: 24px;
+	width: auto;
 	clear: both;
    	float: left;
+   	cursor: pointer;
 }
 
 .shop p:hover {
  	background-color: yellow;
  	color: blue;
+}
+
+#textbox-inner-w {
+	position: absolute;
+	display: inline-block;
+	height: auto;
+	bottom:0;
+
 }
 
 .textbox {
@@ -175,23 +192,38 @@ img {
 	margin-left: 0;
 	background-color: black;
 	left: 0;
+	overflow: hidden;
 }
 
 .textbox p {
+	position: relative;
+	bottom-margin:0;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	font-size: 0.7vw;
+	font-size: 0.6vw;
 }
 
 .textbox p .highlight-II {
 	color: yellow;
 }
 
+.textbox p .highlightnum {
+	cursor: pointer;
+}
+
 .textbox p .highlightnum:hover {
  	background-color: white;
  	color: black !important; 
+}
+
+.p2-desktop {
+	display: block;
+}
+
+.p2-mobile {
+	display: none;
 }
 
 .info-desktop a:hover {
@@ -200,11 +232,14 @@ img {
 }
 
 p.yellowbox {
+	text-indent : 5em;
+	position: absolute;
 	background-color: yellow;
 	color: black;
-	margin-left: 25px;
-	margin-right: 25px;
-	padding-top: 70px;
+	margin: 0;
+	padding-top: 80px;
+	padding-bottom: 30px;
+	display: inline-block;
 }
 
 .textbox p .number3 {
@@ -238,14 +273,13 @@ a.yellow {
 
 .info-desktop {
 	display: block;
-	width: 625px;
+	width: 645px;
 	padding-left: 116px;
 	text-align: right;
 }
 
 #readmore {
-	position: absolute;
-	bottom: 10px;
+	cursor: pointer;
 }
 
 /* MAILING LIST SUBSCRIPTION */
@@ -352,6 +386,10 @@ a.yellow {
 		display: block;
 	}
 
+	.breakdesktop {
+		display: none;
+	}
+
 	.info-button {
 		z-index: 100;
 		position: absolute;
@@ -425,12 +463,22 @@ a.yellow {
 	}
 
 	p.yellowbox {
+		text-indent : 0;
 		margin: 0;
 		height:50px;
 	}
 
+	.p2-desktop {
+		display: none;
+	}
+
+	.p2-mobile {
+		display: block;
+	}
+
 	.logo {
 		position: absolute;
+		cursor: pointer;
 		top: -80px;
 		left: 10px;
 	}
