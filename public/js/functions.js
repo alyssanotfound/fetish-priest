@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
     if (ww < 600) {
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
-      $("#references").removeClass("hidden");
+      // $("#references").removeClass("hidden");
       $(".toggletext").each(function(){
             $(".toggletext").removeClass("hidden");
             $('.number3').css("color", "white");
@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height("96%");
       $("#readmore").removeClass("hidden");
-      $("#references").addClass("hidden");
+      // $("#references").addClass("hidden");
       $(".toggletext").each(function() {
             $(".toggletext").addClass("hidden");
             $('.number3').css("color", "black");
