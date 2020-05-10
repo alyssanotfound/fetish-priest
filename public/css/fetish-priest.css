@@ -246,7 +246,7 @@ p.yellowbox {
 	color: black;
 }
 
-p.textalign-rt {
+.textbox p.textalign-rt {
 	text-align: right;
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
@@ -468,7 +468,7 @@ a.yellow {
 		height:50px;
 	}
 
-	.p01 {
+	#textbox-inner-w .p01 {
 		padding-bottom: 0;
 	}
 
