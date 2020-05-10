@@ -53,7 +53,7 @@ $(function() {
             if ($(".textbox").hasClass("hidden")==false && ww < 600) {
                 //textbox is already open, so close it
                 $(".textbox").addClass("hidden");
-                $('.info-button').css("background-image", "url(../public/assets/info-button.png");
+                $('.info-button').css("background-image", "url(../assets/info-button.png");
             }
     		$( ".circle" ).removeClass('hidden');
     		buttonson = true;
@@ -88,11 +88,11 @@ $(function() {
             //now open textbox
             $(".textbox").removeClass("hidden");
             $(".textbox").height(($(window).height() - 150) +"px");
-            $('.info-button').css("background-image", "url(../public/assets/info-button-x.png");
+            $('.info-button').css("background-image", "url(../assets/info-button-x.png");
         } else if ($(".textbox").hasClass("hidden")==false) {
             //textbox is already open, so close it
             $(".textbox").addClass("hidden");
-            $('.info-button').css("background-image", "url(../public/assets/info-button.png");
+            $('.info-button').css("background-image", "url(../assets/info-button.png");
         }
     });
 });
