@@ -9,6 +9,7 @@ jQuery(document).ready(function($) {
     if (ww < 600) {
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
+      $('.yellowbox span').addClass("remove");
       // $("#references").removeClass("hidden");
       $(".toggletext").each(function(){
             $(".toggletext").removeClass("hidden");
@@ -21,6 +22,7 @@ jQuery(document).ready(function($) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height("96%");
       $("#readmore").removeClass("hidden");
+      $('.yellowbox span').removeClass("remove");
       // $("#references").addClass("hidden");
       $(".toggletext").each(function() {
             $(".toggletext").addClass("hidden");
@@ -45,10 +47,18 @@ $(function() {
         var ww = document.body.clientWidth;
     	if (buttonson == true) {  		
     		$( ".circle" ).addClass('hidden');
-    		buttonson = false;
     		//just in case any descriptions are on, loop thru and make sure they are all hidden
     		$(".desc").addClass("hidden");
+            //remove item divs so they arent overlapping other info
+            $(".wrap").addClass('remove');
+            $(".shop p").css({
+                color: "white", 
+                backgroundColor: "blue"
+            });
+            buttonson = false;
     	} else if (buttonson == false) {
+            //make divs visible
+            $(".wrap").removeClass('remove');
             //turn on buttons but first turn off textbox if its visible
             if ($(".textbox").hasClass("hidden")==false && ww < 600) {
                 //textbox is already open, so close it
@@ -57,6 +67,10 @@ $(function() {
             }
     		$( ".circle" ).removeClass('hidden');
     		buttonson = true;
+            $(".shop p").css({
+                color: "blue", 
+                backgroundColor: "yellow"
+            });
     	}
 	});
 });
@@ -84,6 +98,12 @@ $(function() {
             buttonson = false;
             //just in case any descriptions are on, loop thru and make sure they are all hidden
             $(".desc").addClass("hidden");
+            //remove item divs so they arent overlapping other info
+            $(".wrap").addClass('remove');
+            $(".shop p").css({
+                color: "white", 
+                backgroundColor: "blue"
+            });
             } 
             //now open textbox
             $(".textbox").removeClass("hidden");
@@ -104,7 +124,8 @@ $(function() {
             $(".toggletext").each(function(){
                 $(".toggletext").removeClass("hidden");
                 $('.number3').css("color", "white");
-                $('.highlight').css("color", "yellow");  
+                // $('.yellowbox span').removeClass("remove");
+                // $('.highlight').css("color", "yellow");  
             });
             $("#readmore").text("[READ LESS]");
             textOnDesktop = true;
@@ -112,7 +133,8 @@ $(function() {
             $(".toggletext").each(function() {
                 $(".toggletext").addClass("hidden");
                 $('.number3').css("color", "black");
-                $('.highlight').css("color", "white"); 
+                // $('.yellowbox span').addClass("remove");
+                // $('.highlight').css("color", "white"); 
             });
             $("#readmore").text("[READ MORE]");
             textOnDesktop = false;
@@ -126,13 +148,15 @@ $(function() {
       function() {
         $(".toggletext").removeClass( "hidden" );
         $('.number3').css("color", "white");
-        $('.highlight').css("color", "yellow");
+        // $('.yellowbox span').removeClass("remove");
+        // $('.highlight').css("color", "yellow");
       }, function() {
         console.log("hide");
         if (textOnDesktop == false){
             $(".toggletext").addClass( "hidden" );
             $('.number3').css("color", "black");
-            $('.highlight').css("color", "white");
+            // $('.yellowbox span').addClass("remove");
+            // $('.highlight').css("color", "white");
         }
       }
     );
