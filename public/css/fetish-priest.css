@@ -240,6 +240,7 @@ p.yellowbox {
 	padding-top: 80px;
 	padding-bottom: 30px;
 	display: inline-block;
+	z-index: 100px;
 }
 
 .textbox p .number3 {
