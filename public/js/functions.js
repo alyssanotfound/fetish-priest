@@ -174,23 +174,32 @@ $(function() {
 //CREDITS - DESKTOP
 $(function() {
     $(".credits").click(function(){
-        $(".creditstext").toggle();
-        startScroll();
+        // $(".creditstext").toggle();
+        if ( $('.creditstext').css('visibility') == 'hidden' ) {
+            $('.creditstext').css('visibility','visible');
+        } else {
+            $('.creditstext').css('visibility','hidden');
+        }
     });
 });
 
-function startScroll() {
-    var marquee = $('div.creditstext');
-    marquee.each(function() {
-        console.log("scrolling should work");
-        var mar = $(this),indent = mar.width();
-        mar.marquee = function() {
-            indent--;
-            mar.css('text-indent',indent);
-            if (indent < -1 * mar.children('div.creditsscroll').width()) {
-                indent = mar.width();
-            }
-        };
-        mar.data('interval',setInterval(mar.marquee,1000/60));
-    });
-};
+$(function() {
+    console.log("start scroll");
+    $('.js-conveyor-1').jConveyorTicker();
+});
+
+// function startScroll() {
+//     var marquee = $('div.creditstext');
+//     marquee.each(function() {
+//         console.log("scrolling should work");
+//         var mar = $(this),indent = mar.width();
+//         mar.marquee = function() {
+//             indent--;
+//             mar.css('text-indent',indent);
+//             if (indent < -1 * mar.children('div.creditsscroll').width()) {
+//                 indent = mar.width();
+//             }
+//         };
+//         mar.data('interval',setInterval(mar.marquee,1000/60));
+//     });
+// };
