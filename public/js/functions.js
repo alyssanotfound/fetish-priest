@@ -167,6 +167,30 @@ $(function() {
     $(".logo").click(function(){
         console.log("logo clicked");
         $("#mc_embed_signup").toggle();
+        $(".credits").toggle();
     });
 });
 
+//CREDITS - DESKTOP
+$(function() {
+    $(".credits").click(function(){
+        $(".creditstext").toggle();
+        startScroll();
+    });
+});
+
+function startScroll() {
+    var marquee = $('div.creditstext');
+    marquee.each(function() {
+        console.log("scrolling should work");
+        var mar = $(this),indent = mar.width();
+        mar.marquee = function() {
+            indent--;
+            mar.css('text-indent',indent);
+            if (indent < -1 * mar.children('div.creditsscroll').width()) {
+                indent = mar.width();
+            }
+        };
+        mar.data('interval',setInterval(mar.marquee,1000/60));
+    });
+};

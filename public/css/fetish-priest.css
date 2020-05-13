@@ -126,14 +126,15 @@ body {
 	position: absolute;
 	top: 25%;
 	right: 0;
-	width: 45%;
+	width: 56%;
 }
 
 .logo {
 	position: relative;
 	float: right;
 	margin-right: 20px;
-	margin-top: 10px;
+	margin-top: 5px;
+	z-index: 1000;
 }
 
 .logo img {
@@ -145,6 +146,8 @@ img {
 	clip-path: circle(50%);
 	position: relative;
 	display: block;
+	height: 50px;
+	width: 50px;
 }
 
 .info {
@@ -261,14 +264,34 @@ p.yellowbox {
 	font-size: 0.7vw;
 }
 
+.credits {
+	float: left;
+	display: none;
+	cursor: pointer;
+}
+
+div.creditstext {
+	float: left;
+	width: 25%;
+	margin-left: -2%;
+	display: none;
+	background-color: white;
+	color: black;
+	white-space:no-wrap;
+	overflow:hidden;
+}
+
+
+div.creditstext > div.creditsscroll {
+    white-space:nowrap;
+    display:inline;
+    width:auto;
+}
+
 a.yellow {
 	color: yellow;
 	text-decoration: none;
 }
-
-/*.textbox p .highlight {
-	color: white;
-}*/
 
 .info-mobile {
 	display: none;
@@ -276,8 +299,7 @@ a.yellow {
 
 .info-desktop {
 	display: block;
-	width: 645px;
-	padding-left: 116px;
+	width: 100%;
 	text-align: right;
 }
 
@@ -292,8 +314,8 @@ a.yellow {
 	font-family: 'Trim', Arial;
 	margin-right: 0;
 	display: none;
-	margin-top: 10px;
 	margin-right: -70px;
+	margin-top: 5px;
 }
 
 #mc_embed_signup input {
@@ -520,7 +542,7 @@ a.yellow {
 		padding-bottom: 19px;
 		top: -5px;
 		width: 150px;
-		z-index: 100;
+		z-index: 50;
 		padding-left: 10px;
 	}
 
