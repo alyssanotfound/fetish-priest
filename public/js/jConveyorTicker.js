@@ -25,7 +25,7 @@
         var settings = {
             anim_duration: 200,
             reverse_elm: false,
-            force_loop: false
+            force_loop: true
         };
         var cycle_duration = settings.anim_duration;
         var reverse_commute = settings.reverse_elm;

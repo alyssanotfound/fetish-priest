@@ -54,11 +54,17 @@ body {
 .jctkr-wrapper.jctkr-initialized ul{
   opacity: 1;
 }
+
 .jctkr-wrapper ul li{
   display: inline-block;
-  font-family: sans-serif;
   font-size: 0.7vw;
 }
+
+.jctkr-wrapper ul li a{
+  color: black;
+  text-decoration: underline;
+}
+
 .jctkr-label{
   display: inline-block;
 }
