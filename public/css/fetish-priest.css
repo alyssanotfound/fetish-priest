@@ -377,6 +377,9 @@ a.yellow {
 	padding: 8px;
 	font-size: 0.7vw;
 	width: 170px;
+	-webkit-appearance: none;
+	-webkit-border-radius:0;
+	border-radius:0;
 }
 
 #mc_embed_signup #mce-LNAME {

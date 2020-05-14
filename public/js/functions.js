@@ -1,6 +1,7 @@
 var buttonson = false;
 var currItem;
 var textOnDesktop = false;
+var textHover = false;
 
 //CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
@@ -12,9 +13,8 @@ jQuery(document).ready(function($) {
       $('.yellowbox span').addClass("remove");
       // $("#references").removeClass("hidden");
       $(".toggletext").each(function(){
-            $(".toggletext").removeClass("hidden");
-            $('.number3').css("color", "white");
-            $('.highlight').css("color", "yellow");
+            revealText();
+            // $('.highlight').css("color", "yellow");
             textOnDesktop = true;
        });
       $(".dash").addClass("remove");
@@ -25,9 +25,8 @@ jQuery(document).ready(function($) {
       $('.yellowbox span').removeClass("remove");
       // $("#references").addClass("hidden");
       $(".toggletext").each(function() {
-            $(".toggletext").addClass("hidden");
-            $('.number3').css("color", "black");
-            $('.highlight').css("color", "white");
+            hideText();
+            // $('.highlight').css("color", "white");
             textOnDesktop = false;
        });
       $(".dash").removeClass("remove");
@@ -122,45 +121,68 @@ $(function() {
     $( "#readmore" ).click(function() {
         if (textOnDesktop==false) {
             $(".toggletext").each(function(){
-                $(".toggletext").removeClass("hidden");
-                $('.number3').css("color", "white");
-                // $('.yellowbox span').removeClass("remove");
-                // $('.highlight').css("color", "yellow");  
+                revealText(); 
             });
             $("#readmore").text("[READ LESS]");
             textOnDesktop = true;
+            textHover = false;
         } else {
             $(".toggletext").each(function() {
-                $(".toggletext").addClass("hidden");
-                $('.number3').css("color", "black");
-                // $('.yellowbox span').addClass("remove");
-                // $('.highlight').css("color", "white"); 
+                hideText();
             });
             $("#readmore").text("[READ MORE]");
             textOnDesktop = false;
+            textHover = false;
         }
     });
 });
 
 //HOVER FUNCTIONALITY - DESKTOP
+//read more hover
 $(function() {
     $( "#readmore" ).hover(
       function() {
-        $(".toggletext").removeClass( "hidden" );
-        $('.number3').css("color", "white");
-        // $('.yellowbox span').removeClass("remove");
-        // $('.highlight').css("color", "yellow");
+        revealText();
+        textHover = true;
       }, function() {
-        console.log("hide");
+        //will never trigger anything when mouseOff 'read more' because it'll always be a hover state of div
+        // console.log("hide");
+        // if (textOnDesktop == false){
+        //     hideText();
+        // }
+      }
+    );
+});
+
+$(function() {
+    $( ".textbox" ).hover(
+      function() {
+        console.log("mouse in on textbox");
+        if (textHover == true ){
+           revealText(); 
+        }
+      }, function() {
+        console.log("mouse out in on textbox");
+        // console.log("hide");
         if (textOnDesktop == false){
-            $(".toggletext").addClass( "hidden" );
-            $('.number3').css("color", "black");
-            // $('.yellowbox span').addClass("remove");
-            // $('.highlight').css("color", "white");
+        hideText();
+        textHover = false;
         }
       }
     );
 });
+
+// $('#readmore').is(":hover") == false && 
+
+function revealText() {
+    $(".toggletext").removeClass( "hidden" );
+    $('.number3').css("color", "white");
+}
+
+function hideText() {
+    $(".toggletext").addClass( "hidden" );
+    $('.number3').css("color", "black");
+}
 
 //LOGO / SUBSCRIBE BUTTON - DESKTOP
 $(function() {
@@ -188,18 +210,4 @@ $(function() {
     $('.js-conveyor-1').jConveyorTicker();
 });
 
-// function startScroll() {
-//     var marquee = $('div.creditstext');
-//     marquee.each(function() {
-//         console.log("scrolling should work");
-//         var mar = $(this),indent = mar.width();
-//         mar.marquee = function() {
-//             indent--;
-//             mar.css('text-indent',indent);
-//             if (indent < -1 * mar.children('div.creditsscroll').width()) {
-//                 indent = mar.width();
-//             }
-//         };
-//         mar.data('interval',setInterval(mar.marquee,1000/60));
-//     });
-// };
+
