@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
   var alterClass = function() {
     var ww = document.body.clientWidth;
     if (ww < 600) {
-        alert("HTML on page load: " + $("html").css("background-size"));
+        // alert("HTML on page load: " + $("html").css("background-size"));
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
       $('.yellowbox span').addClass("remove");
@@ -189,7 +189,7 @@ function hideText() {
 $(function() {
     $(".logo").click(function(){
         // console.log("logo clicked");
-        alert("HTML: " + $("html").css("background-size"));
+        // alert("HTML: " + $("html").css("background-size"));
         $("#mc_embed_signup").toggle();
         $(".credits").toggle();
     });
