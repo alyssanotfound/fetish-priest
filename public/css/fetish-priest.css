@@ -437,8 +437,9 @@ a.yellow {
 	html {
 		margin: 0px;
 		padding: 0;
-		background: url("../imgs/fetish-priest-vert.jpg") fixed center center; 
+		background: url("../imgs/fetish-priest-vert.jpg"); 
 		height: 100%;
+		background-size: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
