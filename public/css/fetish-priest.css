@@ -586,6 +586,7 @@ a.yellow {
 	#mc_embed_signup input {
 		padding: 5px;
 		font-size: 3vw;
+		margin:0;
 	}
 
 	#mc_embed_signup #mc-embedded-subscribe {
@@ -605,13 +606,13 @@ a.yellow {
 
 	#mc_embed_signup .subwrapper {
 		background-color: transparent;
-		height: 19px;
+		/*height: 19px;*/
 		position: absolute;
-		padding-top: 20px;
-		padding-bottom: 19px;
+		/*padding-top: 20px;*/
+		/*padding-bottom: 19px;*/
 		margin-left: 180px;
 		top: 0;
-		width: 150px;
+		/*width: 150px;*/
 	}
 	
 	#bertoia-wrapper {
