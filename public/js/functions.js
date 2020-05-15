@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
       $(".dash").addClass("remove");
     } else if (ww >= 601) {
       $(".textbox").removeClass("hidden");
-      $(".textbox").height("96%");
+      $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
       $("#readmore").removeClass("hidden");
       $('.yellowbox span').removeClass("remove");
       // $("#references").addClass("hidden");
@@ -107,7 +107,7 @@ $(function() {
             } 
             //now open textbox
             $(".textbox").removeClass("hidden");
-            $(".textbox").height(($(window).height() - 150) +"px");
+            $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
             $('.info-button').css("background-image", "url(../assets/info-button-x.png");
         } else if ($(".textbox").hasClass("hidden")==false) {
             //textbox is already open, so close it
@@ -119,7 +119,7 @@ $(function() {
 
 //READ MORE BUTTON - DESKTOP 
 $(function() {
-    $( "#readmore" ).click(function() {
+    $( "#readmore span" ).click(function() {
         if (textOnDesktop==false) {
             $(".toggletext").each(function(){
                 revealText(); 
@@ -141,7 +141,7 @@ $(function() {
 //HOVER FUNCTIONALITY - DESKTOP
 //read more hover
 $(function() {
-    $( "#readmore" ).hover(
+    $( "#readmore span" ).hover(
       function() {
         revealText();
         textHover = true;
@@ -192,6 +192,9 @@ $(function() {
         // alert("HTML: " + $("html").css("background-size"));
         $("#mc_embed_signup").toggle();
         $(".credits").toggle();
+        if ($('.creditstext').css('visibility') == 'visible') {
+            $('.creditstext').css('visibility','hidden');
+        }
     });
 });
 
@@ -201,15 +204,16 @@ $(function() {
         // $(".creditstext").toggle();
         if ( $('.creditstext').css('visibility') == 'hidden' ) {
             $('.creditstext').css('visibility','visible');
+            startScroll();
         } else {
             $('.creditstext').css('visibility','hidden');
         }
     });
 });
 
-$(function() {
+function startScroll() {
     console.log("start scroll");
     $('.js-conveyor-1').jConveyorTicker();
-});
+}
 
 

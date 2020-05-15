@@ -234,12 +234,19 @@ img {
 	top: 0;
 	left: 0;
 	background-color: blue;
-	width: 25%;
-	height: 4%;
+	width: 25vw;
+	height: 0.8vw;
+    padding-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    display: flex;
+    align-items: center;
 }
 
 .shop p {
 	margin-left: 20px;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 	width: auto;
 	clear: both;
    	float: left;
@@ -261,9 +268,9 @@ img {
 
 .textbox {
 	position: absolute;
-	top: 4%;
-	width: 25%;
-	height: 96%;
+	top: 1.8vw;
+	width: 25vw;
+	/*height: 96vh;*/
 	margin-left: 0;
 	background-color: black;
 	left: 0;
@@ -358,8 +365,8 @@ div.creditstext {
 	color: black;
 	padding-left: 0;
 	padding-right: 0;
-	padding-top: 0.3vw;
-	padding-bottom: 0.3vw;
+	padding-top: 0.4vw;
+	padding-bottom: 0.4vw;
 	font-family: 'Trim-Regular', Arial;
 	/*white-space:no-wrap;*/
 	/*overflow:hidden;*/
@@ -392,7 +399,7 @@ a.yellow {
 	text-align: right;
 }
 
-#readmore {
+#readmore span {
 	cursor: pointer;
 }
 
@@ -427,20 +434,25 @@ a.yellow {
 }
 
 #mc_embed_signup .subwrapper {
-	background-color: black;
+	
 	color: white;
 	margin-top: 5px;
-	width: 16.5vw;
-	height: 27px;
+	
+	/*height: 27px;*/
 	text-align: left;
 }
 
 #mc_embed_signup .subcontents {
 	clear:both;
    	float:left;
+   	width: 16.5vw;
+   	background-color: black;
+   	display: flex;
+   	align-items: center;
+   	/*padding: 0.25vw;*/
    	/*height: 20px;*/
-   	margin-top: 2px;
-   	margin-left: 5px;
+   	/*margin-top: 2px;*/
+   	/*margin-left: 5px;*/
 }
 
 #mc_embed_signup #mc-embedded-subscribe {
@@ -448,7 +460,8 @@ a.yellow {
 	font-family: 'Trim', Arial;
 	color: white;
    	width: auto;
-   	padding: 6px;
+   	padding: 0;
+   	margin: 0.5vw;
 }
 
 #mc_embed_signup #mc-embedded-subscribe:hover {
