@@ -268,6 +268,7 @@ img {
 	background-color: black;
 	left: 0;
 	overflow: hidden;
+	hyphens: auto;
 }
 
 .textbox p {
