@@ -1,11 +1,28 @@
 
-@font-face {
+/*@font-face {
     font-family: 'Trim';
     src: url('../assets/Trim-Regular.woff2') format('woff2'),
     url('../assets/Trim-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'Trim-Light';
+    src: url('../assets/TrimMono-Light.woff2') format('woff2'),
+        url('../assets/TrimMono-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Trim';
+    src: url('../assets/TrimMono-Medium.woff2') format('woff2'),
+        url('../assets/TrimMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
 a, a:link, a:visited, a:focus, a:hover, a:active{
 	color:white;
 	text-decoration:none; 
@@ -382,7 +399,6 @@ a.yellow {
 	width: 16.6vw;
 	position: relative;
 	float: right;
-	font-family: 'Trim', Arial;
 	display: none;
 	margin-right: -3.9vw;
 	margin-top: 5px;
@@ -390,7 +406,7 @@ a.yellow {
 
 #mc_embed_signup input {
 	background-color: yellow;
-	font-family: 'Trim', Arial;
+	font-family: 'Trim-Light', Arial;
 	outline: none;
 	border: none;
 	color: black;
@@ -427,9 +443,10 @@ a.yellow {
 
 #mc_embed_signup #mc-embedded-subscribe {
 	background-color: black;
+	font-family: 'Trim', Arial;
 	color: white;
    	width: auto;
-   	padding: 0px;
+   	padding: 6px;
 }
 
 #mc_embed_signup #mc-embedded-subscribe:hover {
