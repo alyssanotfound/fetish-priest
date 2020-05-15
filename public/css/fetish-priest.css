@@ -1,11 +1,11 @@
 
-/*@font-face {
-    font-family: 'Trim';
+@font-face {
+    font-family: 'Trim-Regular';
     src: url('../assets/Trim-Regular.woff2') format('woff2'),
     url('../assets/Trim-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}*/
+}
 
 @font-face {
     font-family: 'Trim-Light';
@@ -359,6 +359,7 @@ div.creditstext {
 	padding-right: 0;
 	padding-top: 0.3vw;
 	padding-bottom: 0.3vw;
+	font-family: 'Trim-Regular', Arial;
 	/*white-space:no-wrap;*/
 	/*overflow:hidden;*/
 }
