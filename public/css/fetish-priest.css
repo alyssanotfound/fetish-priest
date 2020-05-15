@@ -33,9 +33,11 @@ body {
   display: inline-block;
   position: relative;
   width: 100%;
-  height: 14px;
+  /*height: 14px;*/
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
   vertical-align: middle;
-  line-height: 14px;
+  line-height: 1vw;
   overflow: hidden;
 }
 .jctkr-wrapper ul{
@@ -331,12 +333,14 @@ p.yellowbox {
 div.creditstext {
 	float: left;
 	width: 16.6vw;
-	margin-left: -2%;
+	margin-left: -1vw;
 	visibility: hidden;
 	background-color: white;
 	color: black;
 	padding-left: 0;
 	padding-right: 0;
+	padding-top: 0.3vw;
+	padding-bottom: 0.3vw;
 	/*white-space:no-wrap;*/
 	/*overflow:hidden;*/
 }
