@@ -34,7 +34,8 @@ body {
   position: relative;
   width: 100%;
   height: 14px;
-  vertical-align: top;
+  vertical-align: middle;
+  line-height: 14px;
   overflow: hidden;
 }
 .jctkr-wrapper ul{
@@ -180,13 +181,15 @@ body {
 .logo {
 	position: relative;
 	float: right;
-	margin-right: 20px;
-	margin-top: 5px;
+	margin-right: 0.5vw;
+	margin-top: 0.5vw;
 	z-index: 1000;
 }
 
 .logo img {
 	cursor: pointer;
+	height: 3.3vw;
+	width: 3.3vw;
 }
 
 img {
@@ -327,7 +330,7 @@ p.yellowbox {
 
 div.creditstext {
 	float: left;
-	width: 25%;
+	width: 16.6vw;
 	margin-left: -2%;
 	visibility: hidden;
 	background-color: white;
@@ -366,12 +369,12 @@ a.yellow {
 
 /* MAILING LIST SUBSCRIPTION */
 #mc_embed_signup {
+	width: 16.6vw;
 	position: relative;
 	float: right;
 	font-family: 'Trim', Arial;
-	margin-right: 0;
 	display: none;
-	margin-right: -70px;
+	margin-right: -3.9vw;
 	margin-top: 5px;
 }
 
@@ -381,9 +384,9 @@ a.yellow {
 	outline: none;
 	border: none;
 	color: black;
-	padding: 8px;
+	padding: 0.5vw;
 	font-size: 0.7vw;
-	width: 170px;
+	width: 11.3vw;
 	-webkit-appearance: none;
 	-webkit-border-radius:0;
 	border-radius:0;
@@ -399,7 +402,7 @@ a.yellow {
 	background-color: black;
 	color: white;
 	margin-top: 5px;
-	width: 265px;
+	width: 16.5vw;
 	height: 27px;
 	text-align: left;
 }
