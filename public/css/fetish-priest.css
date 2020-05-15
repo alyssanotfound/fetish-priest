@@ -53,6 +53,7 @@ body {
   opacity: 0;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+  text-align: left;
 }
 .jctkr-wrapper.jctkr-initialized ul{
   opacity: 1;
@@ -60,7 +61,7 @@ body {
 
 .jctkr-wrapper ul li{
   display: inline-block;
-  font-size: 0.7vw;
+  font-size: 10px;
 }
 
 .jctkr-wrapper ul li a{
@@ -343,6 +344,11 @@ div.creditstext {
 	padding-bottom: 0.3vw;
 	/*white-space:no-wrap;*/
 	/*overflow:hidden;*/
+}
+
+.js-conveyor-1 {
+	font-size: 10px;
+	/*font-family: sans-serif;*/
 }
 
 
