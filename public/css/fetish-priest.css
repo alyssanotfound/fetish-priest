@@ -320,7 +320,7 @@ img {
 
 p.yellowbox {
 	width: calc(100% - 40px);
-	height: 33vh;
+	/*height: 33vh;*/
 	/*text-indent : 5em;*/
 	position: absolute;
 	background-color: yellow;

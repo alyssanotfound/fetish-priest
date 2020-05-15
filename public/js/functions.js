@@ -22,6 +22,12 @@ jQuery(document).ready(function($) {
     } else if (ww >= 601) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
+      // console.log("window height is: " + $(window).height());
+      // console.log("shop height is: " + $(".shop").outerHeight());
+      // console.log("default yellowbox height: " + $(".yellowbox").outerHeight());
+      // console.log("yellowbox height should be: " + ((($(window).height())/3) - $(".shop").outerHeight()) +"px");
+      $(".yellowbox").outerHeight(((($(window).height())/3) - $(".shop").outerHeight()) +"px");
+      // console.log("yellowbox actual height: " + $(".yellowbox").outerHeight());
       $("#readmore").removeClass("hidden");
       $('.yellowbox span').removeClass("remove");
       // $("#references").addClass("hidden");
@@ -124,14 +130,14 @@ $(function() {
             $(".toggletext").each(function(){
                 revealText(); 
             });
-            $("#readmore").text("[READ LESS]");
+            $("#readmore span").text("[READ LESS]");
             textOnDesktop = true;
             textHover = false;
         } else {
             $(".toggletext").each(function() {
                 hideText();
             });
-            $("#readmore").text("[READ MORE]");
+            $("#readmore span").text("[READ MORE]");
             textOnDesktop = false;
             textHover = false;
         }
