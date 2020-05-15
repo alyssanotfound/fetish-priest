@@ -172,9 +172,9 @@ body {
 
 .info-wrapper {
 	position: absolute;
-	top: 25%;
+	top: 25vh;
 	right: 0;
-	width: 50vw;
+	width: 49vw;
 }
 
 .logo {
@@ -201,7 +201,7 @@ img {
 .info {
 	position: relative;
 	display: block;
-	padding: 1%;
+	padding: 0.5vw;
 	background-color: black;
 	float: right;
 }
