@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
   var alterClass = function() {
     var ww = document.body.clientWidth;
     if (ww < 600) {
-        // alert("HTML on page load: " + $("html").css("background-size"));
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
       $('.yellowbox span').addClass("remove");
@@ -19,6 +18,7 @@ jQuery(document).ready(function($) {
             textOnDesktop = true;
        });
       $(".dash").addClass("remove");
+      alert("Size of window is, height: " + $(window).height() + ", width: " + $(window).width());
     } else if (ww >= 601) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
