@@ -183,7 +183,7 @@ $(function() {
 
 function revealText() {
     $(".toggletext").removeClass( "hidden" );
-    $('.number3').css("color", "white");
+    $('.number3').css("color", "yellow");
 }
 
 function hideText() {

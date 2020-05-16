@@ -284,6 +284,7 @@ img {
 	padding-right: 20px;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	margin: 0;
 }
 
 /*.textbox p .highlight-II {
@@ -292,11 +293,12 @@ img {
 
 .textbox p .highlightnum {
 	cursor: pointer;
+	color: yellow;
 }
 
 .textbox p .highlightnum:hover {
  	background-color: white;
- 	color: black !important; 
+ 	color: blue !important; 
 }
 /*
 .p2-desktop {
@@ -341,6 +343,7 @@ p.yellowbox {
 .textbox p.textalign-rt {
 	text-align: right;
 	padding-top: 0 !important;
+	padding-bottom: 0;
 }
 
 .text {
@@ -400,7 +403,13 @@ a.yellow {
 
 #readmore span {
 	cursor: pointer;
+	/*color: yellow;*/
 }
+
+/*#readmore span:hover {
+	background-color: white;
+	color: blue;
+}*/
 
 /* MAILING LIST SUBSCRIPTION */
 #mc_embed_signup {
