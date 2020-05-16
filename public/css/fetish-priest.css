@@ -255,8 +255,13 @@ img {
 }
 
 .shop p:hover {
- 	background-color: yellow;
- 	color: blue;
+ 	background-color: yellow !important;
+ 	color: blue !important;
+}
+
+.consign {
+	position: absolute;
+    margin-top: 15px;
 }
 
 #textbox-inner-w {
