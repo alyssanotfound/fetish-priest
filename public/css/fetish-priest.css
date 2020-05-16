@@ -279,12 +279,20 @@ img {
 
 .textbox p {
 	position: relative;
-	bottom-margin:0;
+	/*bottom-margin:0;*/
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	margin: 0;
+	/*padding-top: 8px;*/
+	padding-bottom: 16px;
+	/*margin: 0;*/
+	/*margin-block-start:0; 
+	margin-block-end:0; 
+	margin-inline-start:0; 
+	margin-inline-end:0;
+	padding-block-start:0; 
+	padding-block-end:0; 
+	padding-inline-start:0; 
+	padding-inline-end:0;*/
 }
 
 /*.textbox p .highlight-II {
@@ -294,6 +302,15 @@ img {
 .textbox p .highlightnum {
 	cursor: pointer;
 	color: yellow;
+}
+
+#textbox-inner-w .p01 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.textbox p:nth-child(4) {
+	padding-top: 0;
 }
 
 .textbox p .highlightnum:hover {
@@ -343,7 +360,9 @@ p.yellowbox {
 .textbox p.textalign-rt {
 	text-align: right;
 	padding-top: 0 !important;
-	padding-bottom: 0;
+	/*padding-bottom: 0;*/
+	font-family: 'Trim', Arial;
+	font-size: 0.5vw;
 }
 
 .text {
@@ -613,6 +632,7 @@ a.yellow {
 
 	#textbox-inner-w .p01 {
 		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 
 	.p2-desktop {
