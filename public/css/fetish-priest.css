@@ -235,8 +235,8 @@ img {
 	background-color: blue;
 	width: 25vw;
 	height: 0.8vw;
-    padding-bottom: 0.5vw;
-    padding-top: 0.5vw;
+    padding-bottom: 0.85vw;
+    padding-top: 0.85vw;
     display: flex;
     align-items: center;
 }
@@ -250,6 +250,8 @@ img {
 	clear: both;
    	float: left;
    	cursor: pointer;
+   	font-size: 0.75vw;
+   	line-height: 0.8vw;
 }
 
 .shop p:hover {
@@ -267,7 +269,7 @@ img {
 
 .textbox {
 	position: absolute;
-	top: 1.8vw;
+	top: 2.5vw;
 	width: 25vw;
 	/*height: 96vh;*/
 	margin-left: 0;
@@ -351,6 +353,7 @@ p.yellowbox {
 	bottom: 0;
 	padding-bottom: 15px;
 	padding-right: 20px;
+	letter-spacing: 0.2px;
 }
 
 .textbox p .number3 {
@@ -587,6 +590,7 @@ a.yellow {
 	.shop p {
 		margin-left: 22%;
 		width: auto;
+		font-size: 0.75vw;
 	}
 
 	p.yellowbox {
