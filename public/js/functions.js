@@ -3,6 +3,7 @@ var currItem;
 var textOnDesktop = false;
 var textHover = false;
 
+
 //CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
   var alterClass = function() {
@@ -200,26 +201,29 @@ $(function() {
         $(".credits").toggle();
         if ($('.creditstext').css('visibility') == 'visible') {
             $('.creditstext').css('visibility','hidden');
+            jsConveyor1.pauseAnim();
         }
     });
 });
 
 //CREDITS - DESKTOP
+
+// window.jsConveyor1 = "hello";
+window.jsConveyor1 = $('.js-conveyor-1').jConveyorTicker({
+  start_paused: true
+});
+
 $(function() {
     $(".credits").click(function(){
         // $(".creditstext").toggle();
         if ( $('.creditstext').css('visibility') == 'hidden' ) {
             $('.creditstext').css('visibility','visible');
-            startScroll();
+            jsConveyor1.playAnim();
         } else {
             $('.creditstext').css('visibility','hidden');
+            jsConveyor1.pauseAnim();
         }
     });
 });
-
-function startScroll() {
-    console.log("start scroll");
-    $('.js-conveyor-1').jConveyorTicker();
-}
 
 
