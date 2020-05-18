@@ -636,7 +636,7 @@ a.yellow {
 		line-height: 2vw;
 		/*padding-top: 14px;*/
 		width: 100vw;
-		height: 4.33vh;
+		height: 4.35vh;
 		padding-top: 2vh;
 		padding-bottom: 2vh;
 		text-align: right;
@@ -665,7 +665,7 @@ a.yellow {
 	}
 
 	.textbox p {
-		padding: 0vw;
+		padding: 1vw;
 		/*font-size: 1.6vw;*/
 		/*padding: 5px;*/
 	}
