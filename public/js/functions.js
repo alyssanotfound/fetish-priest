@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
     if (ww < 600) {
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
-      $('.yellowbox span').addClass("remove");
+      // $('.yellowbox span').addClass("remove");
       // $("#references").removeClass("hidden");
       $(".toggletext").each(function(){
             revealText();
@@ -19,7 +19,7 @@ jQuery(document).ready(function($) {
             textOnDesktop = true;
        });
       $(".dash").addClass("remove");
-      alert("Size of window is, height: " + $(window).height() + ", width: " + $(window).width());
+      // alert("Size of window is, height: " + $(window).height() + ", width: " + $(window).width());
     } else if (ww >= 601) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
       $(".yellowbox").outerHeight(((($(window).height())/3) - $(".shop").outerHeight()) +"px");
       // console.log("yellowbox actual height: " + $(".yellowbox").outerHeight());
       $("#readmore").removeClass("hidden");
-      $('.yellowbox span').removeClass("remove");
+      // $('.yellowbox span').removeClass("remove");
       // $("#references").addClass("hidden");
       $(".toggletext").each(function() {
             hideText();
@@ -114,7 +114,7 @@ $(function() {
             } 
             //now open textbox
             $(".textbox").removeClass("hidden");
-            $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
+            // $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
             $('.info-button').css("background-image", "url(../assets/info-button-x.png");
         } else if ($(".textbox").hasClass("hidden")==false) {
             //textbox is already open, so close it
@@ -209,8 +209,10 @@ $(function() {
 //CREDITS - DESKTOP
 
 // window.jsConveyor1 = "hello";
-window.jsConveyor1 = $('.js-conveyor-1').jConveyorTicker({
-  start_paused: true
+$(function() {
+    window.jsConveyor1 = $('.js-conveyor-1').jConveyorTicker({
+      start_paused: true
+    });
 });
 
 $(function() {

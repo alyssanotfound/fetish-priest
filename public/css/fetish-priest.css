@@ -78,7 +78,7 @@ body {
 
 .jctkr-wrapper ul li{
   display: inline-block;
-  font-size: 10px;
+  font-size: 0.5vw;
 }
 
 .jctkr-wrapper ul li a{
@@ -234,7 +234,7 @@ img {
 	left: 0;
 	background-color: blue;
 	width: 25vw;
-	height: 0.8vw;
+	height: 0.85vw;
     padding-bottom: 0.85vw;
     padding-top: 0.85vw;
     display: flex;
@@ -337,7 +337,7 @@ img {
 	display: block;
 }
 
-.info-desktop a:hover {
+.text a:hover {
 	background-color: white;
 	color: blue;
 }
@@ -402,7 +402,7 @@ div.creditstext {
 }
 
 .js-conveyor-1 {
-	font-size: 10px;
+	font-size: 0.5vw;
 	/*font-family: sans-serif;*/
 }
 
@@ -465,7 +465,7 @@ a.yellow {
 #mc_embed_signup #mce-LNAME {
 	border-bottom: dashed;
 	border-color: black;
-	border-width: thin;
+	border-width: 0.1vw;
 }
 
 #mc_embed_signup .subwrapper {
@@ -501,7 +501,8 @@ a.yellow {
 
 #mc_embed_signup #mc-embedded-subscribe:hover {
 	background-color: white;
-	color: black;
+	color: blue;
+	border-color: white;
 }
 
 ::placeholder {
@@ -538,7 +539,7 @@ a.yellow {
 	}
 
 	.text {
-		font-size: 3vw;
+		font-size: 2vw;
 	}
 
 	.circle {
@@ -571,6 +572,10 @@ a.yellow {
 		bottom: 10px;
 	}
 
+	.info {
+		padding: 0vw;
+	}
+
 	.desc {
 		position: relative;
 		display: block;
@@ -586,36 +591,61 @@ a.yellow {
 	}
 
 	.shop {
-		width: 100%;
-		height: 60px;
-		top: 150px;
-		line-height: 30px;
+		width: 100vw;
+		height: 8.33vh;
+		top: 20vh;
+		padding-top: 0;
+		padding-bottom: 0;
+		/*line-height: 30px;*/
 	}
 
 	.shop p {
-		margin-left: 22%;
-		width: auto;
-		font-size: 0.75vw;
+		margin-left: 22vw;
+		width: 6vw;
+		font-size: 2vw;
+		line-height: 2.2vw;
+		text-align: center;
+		display: inline-block;
 	}
 
 	p.yellowbox {
 		left: 0;
 		text-indent:0;
 		margin: 0;
-		height:50px;
+		height:20.83vh;
+		width: 48vw;
+		/*top: -8.33vh;*/
+		/*z-index: 50;*/
+	}
+
+	.textbox .yellowbox .btm {
+		padding: 0;
+		padding-bottom: 2vh;
+		width: 48vw;
 	}
 
 	.info-wrapper {
-		width: 100%;
-		top: 90px;
+		width: 100vw;
+		top: 11.67vh;
 	}
 
 	.info-mobile {
-		display: block;
-		line-height: 17px;
-		padding-top: 14px;
-		width: 98%;
-		height: 42px;
+		line-height: 2vw;
+		/*padding-top: 14px;*/
+		width: 100vw;
+		height: 4.33vh;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+		text-align: right;
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+	}
+
+	.info-mobile p {
+		margin-block-start: 0;
+    	margin-block-end: 0;
+    	margin-right: 1vw;
 	}
 
 	.info-desktop {
@@ -623,20 +653,22 @@ a.yellow {
 	}
 
 	.textbox {
-		width: 50%;
+		width: 50vw;
 		right: 0;
 		margin-left: auto;
-		top: 150px;
-		height: 0px;
+		top: 20vh;
+		height: 80vh;
+		line-height: 2.1vw;	
 	}
 
 	.textbox p {
-		font-size: 1.6vw;
-		padding: 5px;
+		padding: 1vw;
+		/*font-size: 1.6vw;*/
+		/*padding: 5px;*/
 	}
 
 	#textbox-inner-w {
-		padding-bottom: 35px;
+		/*padding-bottom: 35px;*/
 	}
 
 	#textbox-inner-w .p01 {
@@ -660,49 +692,75 @@ a.yellow {
 		color: yellow;
 	}
 
+	.consign {
+		text-align: center;
+		width: 48vw;
+		margin-top: 1vh;
+	}
+
+	.textbox p.textalign-rt {
+		font-size: 1.4vw;
+	}
+
 	.logo {
 		position: absolute;
 		cursor: pointer;
-		top: -80px;
-		left: 10px;
+		margin: 0;
+		top: 1.66vh;
+		left: 1.66vh;
+	}
+
+	.logo img {
+	    height: 8.33vh;
+	    width: 8.33vh;
 	}
 
 	#mc_embed_signup {
 		position: absolute;
-		top: -85px;
-		left: 80px;
+		top: 1.66vh;
+		left: 16.66vw;
+		margin: 0;
 	}
 
 	#mc_embed_signup input {
-		padding: 5px;
-		font-size: 3vw;
+		position: absolute;
+		font-size: 2vw;
 		margin:0;
+		width: 63.33vw;
+		padding: 0;
+    	height: 4.165vh;
+    	padding-left: 2vw;
 	}
 
 	#mc_embed_signup #mc-embedded-subscribe {
 		position: absolute;
-		text-align: left;
-		padding-top: 19px;
-		padding-bottom: 19px;
-		top: -5px;
-		width: 150px;
+		text-align: center;
+		top: 0;
+		width: 20vw;
+		height: 8.33vh;
 		z-index: 50;
-		padding-left: 10px;
+		margin: 0;
+		left: 63.34vw;
+		border-bottom: solid;
+		border-color: black;
+		border-width: 0.1vw;
 	}
 
 	#mc_embed_signup .subcontents {
 		margin: 0;
+		width:20vw;
 	}
 
 	#mc_embed_signup .subwrapper {
-		background-color: transparent;
-		/*height: 19px;*/
-		position: absolute;
-		/*padding-top: 20px;*/
-		/*padding-bottom: 19px;*/
-		margin-left: 180px;
+		margin: 0;
 		top: 0;
-		/*width: 150px;*/
+	}
+
+	#mc_embed_signup input#mce-EMAIL {
+		top: 4.165vh;
+		border-top: dashed;
+		border-color: black;
+		border-width: 0.1vw;
 	}
 	
 	#bertoia-wrapper {
