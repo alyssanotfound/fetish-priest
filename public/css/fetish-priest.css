@@ -505,7 +505,7 @@ a.yellow {
 #mc_embed_signup #mc-embedded-subscribe:hover {
 	background-color: white;
 	color: blue;
-	border-color: white;
+	/*border-color: white;*/
 }
 
 ::placeholder {
@@ -752,13 +752,13 @@ a.yellow {
 		top: 0;
 		width: 20vw;
 		/*height: 8.33vh;*/
-		height: calc(var(--vh, 1vh) * 8.33);
+		height: calc(var(--vh, 1vh) * 8.43);
 		z-index: 50;
 		margin: 0;
 		left: 63.34vw;
-		border-bottom: solid;
+		/*border-bottom: solid;
 		border-color: black;
-		border-width: 0.1vw;
+		border-width: calc(var(--vh, 1vh) * 0.1);*/
 	}
 
 	#mc_embed_signup .subcontents {
@@ -776,7 +776,7 @@ a.yellow {
 		top: calc(var(--vh, 1vh) * 4.165);
 		border-top: dashed;
 		border-color: black;
-		border-width: 0.1vw;
+		border-width: calc(var(--vh, 1vh) * 0.1);
 	}
 
 	#mc_embed_signup #mce-LNAME {
