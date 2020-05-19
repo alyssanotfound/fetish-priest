@@ -659,14 +659,14 @@ a.yellow {
 		display: none;
 	}
 
-	.textbox {
+	div.textbox {
 		width: 50vw;
 		right: 0;
 		margin-left: auto;
 		top: calc(var(--vh, 1vh) * 20);
 		/*height: 50vh;*/
 		line-height: 2.1vw;	
-		height: calc(var(--vh, 1vh) * 80);
+		height: calc(var(--vh, 1vh) * 80) ;
 	}
 
 	.textbox p {
@@ -777,6 +777,10 @@ a.yellow {
 		border-top: dashed;
 		border-color: black;
 		border-width: 0.1vw;
+	}
+
+	#mc_embed_signup #mce-LNAME {
+		border: none;
 	}
 	
 	#bertoia-wrapper {

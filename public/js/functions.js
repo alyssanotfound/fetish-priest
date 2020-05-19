@@ -13,8 +13,12 @@ jQuery(document).ready(function($) {
       let vh = window.innerHeight * 0.01;
       // Then we set the value in the --vh custom property to the root of the document
       document.documentElement.style.setProperty('--vh', `${vh}px`);
+      //remove inline height assigned in desktop mode, if there
+      $(".textbox").css("height","");
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
+      // var currH = calc(vh*80)
+      // $(".textbox").height(calc(vh * 80));
       // $('.yellowbox span').addClass("remove");
       // $("#references").removeClass("hidden");
       $(".toggletext").each(function(){
