@@ -624,13 +624,15 @@ a.yellow {
 
 	.textbox .yellowbox .btm {
 		padding: 0;
-		padding-bottom: 2vh;
+		/*padding-bottom: 2vh;*/
+		padding-bottom: calc(var(--vh, 1vh) * 2);
 		width: 48vw;
 	}
 
 	.info-wrapper {
 		width: 100vw;
-		top: 11.67vh;
+		/*top: 11.67vh;*/
+		top: calc(var(--vh, 1vh) * 11.67);
 	}
 
 	.info-mobile {
@@ -749,7 +751,8 @@ a.yellow {
 		text-align: center;
 		top: 0;
 		width: 20vw;
-		height: 8.33vh;
+		/*height: 8.33vh;*/
+		height: calc(var(--vh, 1vh) * 8.33);
 		z-index: 50;
 		margin: 0;
 		left: 63.34vw;
