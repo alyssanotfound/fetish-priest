@@ -596,8 +596,8 @@ a.yellow {
 
 	.shop {
 		width: 100vw;
-		height: 8.33vh;
-		top: 20vh;
+		height: calc(var(--vh, 1vh) * 8.33);
+		top: calc(var(--vh, 1vh) * 20);
 		padding-top: 0;
 		padding-bottom: 0;
 		/*line-height: 30px;*/
@@ -616,7 +616,7 @@ a.yellow {
 		left: 0;
 		text-indent:0;
 		margin: 0;
-		height:20.83vh;
+		height: calc(var(--vh, 1vh) * 20.83);
 		width: 48.1vw;
 		/*top: -8.33vh;*/
 		/*z-index: 50;*/
@@ -637,9 +637,10 @@ a.yellow {
 		line-height: 2vw;
 		/*padding-top: 14px;*/
 		width: 100vw;
-		height: 4.35vh;
-		padding-top: 2vh;
-		padding-bottom: 2vh;
+		/*height: 4.35vh;*/
+		height: calc(var(--vh, 1vh) * 4.35);
+		padding-top: calc(var(--vh, 1vh) * 2);
+		padding-bottom: calc(var(--vh, 1vh) * 2);
 		text-align: right;
 		display: flex;
     	flex-direction: column;
@@ -700,7 +701,7 @@ a.yellow {
 	.consign {
 		text-align: center;
 		width: 48vw;
-		margin-top: 1vh;
+		margin-top: calc(var(--vh, 1vh) * 1);
 	}
 
 	.textbox p.textalign-rt {
@@ -711,18 +712,23 @@ a.yellow {
 		position: absolute;
 		cursor: pointer;
 		margin: 0;
-		top: 1.66vh;
-		left: 1.66vh;
+		/*top: 1.66vh;*/
+		top: calc(var(--vh, 1vh) * 1.66);
+		left: calc(var(--vh, 1vh) * 1.66);
+		/*left: 1.66vh;*/
 	}
 
 	.logo img {
-	    height: 8.33vh;
-	    width: 8.33vh;
+	    /*height: 8.33vh;*/
+	    height: calc(var(--vh, 1vh) * 8.33);
+	    width: calc(var(--vh, 1vh) * 8.33);
+	    /*width: 8.33vh;*/
 	}
 
 	#mc_embed_signup {
 		position: absolute;
-		top: 1.66vh;
+		/*top: 1.66vh;*/
+		top: calc(var(--vh, 1vh) * 1.66);
 		left: 16.66vw;
 		margin: 0;
 	}
@@ -733,7 +739,8 @@ a.yellow {
 		margin:0;
 		width: 63.33vw;
 		padding: 0;
-    	height: 4.165vh;
+    	/*height: 4.165vh;*/
+    	height: calc(var(--vh, 1vh) * 4.165);
     	padding-left: 2vw;
 	}
 
@@ -762,7 +769,8 @@ a.yellow {
 	}
 
 	#mc_embed_signup input#mce-EMAIL {
-		top: 4.165vh;
+		/*top: 4.165vh;*/
+		top: calc(var(--vh, 1vh) * 4.165);
 		border-top: dashed;
 		border-color: black;
 		border-width: 0.1vw;
