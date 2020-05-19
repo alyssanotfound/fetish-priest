@@ -660,7 +660,7 @@ a.yellow {
 		width: 50vw;
 		right: 0;
 		margin-left: auto;
-		height: calc(var(--vh, 1vh) * 20);
+		top: 0;
 		/*height: 50vh;*/
 		line-height: 2.1vw;	
 		height: calc(var(--vh, 1vh) * 80);
