@@ -530,7 +530,7 @@ a.yellow {
 		padding: 0;
 		background: url("../imgs/fetish-priest-vert.jpg") no-repeat center; 
 		height: 100%;
-		height: calc(var(--vh, 1vh) * 100);
+		/*height: calc(var(--vh, 1vh) * 100);*/
 		background-size: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
