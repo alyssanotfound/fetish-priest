@@ -661,7 +661,7 @@ a.yellow {
 		right: 0;
 		margin-left: auto;
 		top: 20vh;
-		height: 78vh;
+		height: 50vh;
 		line-height: 2.1vw;	
 		/*height: calc(var(--vh, 1vh) * 80);*/
 	}
