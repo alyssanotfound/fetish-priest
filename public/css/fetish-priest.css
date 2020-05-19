@@ -586,12 +586,16 @@ a.yellow {
 		margin: auto;
 		background: blue;
 		padding: 0; 
-		width: 67px;
-		height: 24px; 
+		width: 83px;
+		height: 28px; 
 		line-height: 12px;
 		margin-top: 5px; 
 		text-align: center;
 		font-size: 1.5vw !important;
+	}
+
+	.num {
+		font-size: 3vw;
 	}
 
 	.shop {
