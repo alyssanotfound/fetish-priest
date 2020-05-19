@@ -660,10 +660,10 @@ a.yellow {
 		width: 50vw;
 		right: 0;
 		margin-left: auto;
-		top: 20vh;
-		height: 50vh;
+		height: calc(var(--vh, 1vh) * 20);
+		/*height: 50vh;*/
 		line-height: 2.1vw;	
-		/*height: calc(var(--vh, 1vh) * 80);*/
+		height: calc(var(--vh, 1vh) * 80);
 	}
 
 	.textbox p {
