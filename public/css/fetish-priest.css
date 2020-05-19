@@ -662,6 +662,7 @@ a.yellow {
 		top: 20vh;
 		height: 78vh;
 		line-height: 2.1vw;	
+		height: calc(var(--vh, 1vh) * 80);
 	}
 
 	.textbox p {
