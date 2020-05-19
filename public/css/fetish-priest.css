@@ -528,14 +528,15 @@ a.yellow {
 	html {
 		margin: 0px;
 		padding: 0;
-		background: url("../imgs/fetish-priest-vert.jpg") no-repeat center; 
+		/*background: url("../imgs/fetish-priest-vert.jpg") no-repeat center; */
+		background-color: pink;
 		height: 100%;
 		height: calc(var(--vh, 1vh) * 100);
-		background-size: 100%;
-		-webkit-background-size: cover;
+		/*background-size: 100%;*/
+		/*-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
-		background-size: cover;
+		background-size: cover;*/
 	}
 
 	#background-img {
