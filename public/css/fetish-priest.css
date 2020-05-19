@@ -716,7 +716,7 @@ a.yellow {
 		margin: 0;
 		/*top: 1.66vh;*/
 		top: calc(var(--vh, 1vh) * 1.66);
-		left: calc(var(--vh, 1vh) * 1.66);
+		/*left: calc(var(--vh, 1vh) * 1.66);*/
 		/*left: 1.66vh;*/
 	}
 

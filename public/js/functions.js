@@ -13,6 +13,12 @@ jQuery(document).ready(function($) {
       let vh = window.innerHeight * 0.01;
       // Then we set the value in the --vh custom property to the root of the document
       document.documentElement.style.setProperty('--vh', `${vh}px`);
+      //find width of logo to place it evenly
+      var logoW = $(".logo img").width();
+      console.log(logoW);
+      var dis = ((ww / 6) - logoW) / 2;
+      console.log(dis);
+      $(".logo").css({'left': dis  + 'px'});
       //remove inline height assigned in desktop mode, if there
       $(".textbox").css("height","");
       $(".textbox").addClass("hidden");
