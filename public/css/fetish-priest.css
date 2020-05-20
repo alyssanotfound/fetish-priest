@@ -203,8 +203,8 @@ body {
 .logo {
 	position: relative;
 	float: right;
+	margin-top: 29vh;
 	margin-right: 0.5vw;
-	margin-top: 0.5vw;
 	z-index: 1000;
 }
 
@@ -448,7 +448,7 @@ a.yellow {
 	float: right;
 	display: none;
 	margin-right: -3.9vw;
-	margin-top: 5px;
+	margin-top: 29vh;
 }
 
 #mc_embed_signup input {
