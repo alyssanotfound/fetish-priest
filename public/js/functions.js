@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
       var position = $(".creditstext").position();
       console.log(position.top);
-      var mTop = position.top + 5;
+      var mTop = position.top;
       console.log(mTop);
       $("#mc_embed_signup").css({'top': mTop  + 'vh'});
       
