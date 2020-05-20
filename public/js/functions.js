@@ -198,12 +198,13 @@ $(function() {
 
 function revealText() {
     $(".toggletext").removeClass( "hidden" );
-    $('.number3').css("color", "yellow");
+    $(".number3").removeClass( "hidden" );
+    // $('.number3').css("color", "yellow");
 }
 
 function hideText() {
     $(".toggletext").addClass( "hidden" );
-    $('.number3').css("color", "black");
+    $(".number3").addClass( "hidden" );
 }
 
 //LOGO / SUBSCRIBE BUTTON - DESKTOP

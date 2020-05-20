@@ -81,7 +81,8 @@ body {
 
 .jctkr-wrapper ul li{
   display: inline-block;
-  font-size: 0.5vw;
+  font-size: 8px;
+  font-family: sans-serif;
 }
 
 .jctkr-wrapper ul li a{
@@ -254,7 +255,7 @@ img {
    	float: left;
    	cursor: pointer;
    	font-size: 0.75vw;
-   	line-height: 0.8vw;
+   	/*line-height: 0.8vw;*/
 }
 
 .shop p:hover {
@@ -365,7 +366,7 @@ p.yellowbox {
 }
 
 .textbox p .number3 {
-	color: black;
+	color: yellow;
 }
 
 .textbox p.textalign-rt {
@@ -386,6 +387,8 @@ p.yellowbox {
 	float: left;
 	display: none;
 	cursor: pointer;
+	font-size: 0.5vw;
+	margin-top: 0.1vw;
 }
 
 div.creditstext {
@@ -404,10 +407,10 @@ div.creditstext {
 	/*overflow:hidden;*/
 }
 
-.js-conveyor-1 {
-	font-size: 0.5vw;
+/*.js-conveyor-1 {*/
+	/*font-size: 0.5vw;*/
 	/*font-family: sans-serif;*/
-}
+/*}*/
 
 
 /*div.creditstext > div.creditsscroll {
@@ -500,6 +503,7 @@ a.yellow {
    	width: auto;
    	padding: 0;
    	margin: 0.5vw;
+   	cursor: pointer;
 }
 
 #mc_embed_signup #mc-embedded-subscribe:hover {
