@@ -29,6 +29,7 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 
 html {
+	height: 100%;
 	top:0;
 	margin: 0px;
 	padding: 0;
@@ -474,10 +475,8 @@ a.yellow {
 }
 
 #mc_embed_signup .subwrapper {
-	
 	color: white;
-	margin-top: 5px;
-	
+	margin-top: 0.5vh;
 	/*height: 27px;*/
 	text-align: left;
 }

@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
   var alterClass = function() {
     var ww = document.body.clientWidth;
     if (ww < 600) {
-      let vh = window.innerHeight * 0.01;
+      var vh = window.innerHeight * 0.01;
       // Then we set the value in the --vh custom property to the root of the document
       document.documentElement.style.setProperty('--vh', `${vh}px`);
       //find width of logo to place it evenly
