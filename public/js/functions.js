@@ -37,6 +37,12 @@ jQuery(document).ready(function($) {
     } else if (ww >= 601) {
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
+      var position = $(".creditstext").position();
+      console.log(position.top);
+      var mTop = position.top + 5;
+      console.log(mTop);
+      $("#mc_embed_signup").css({'top': mTop  + 'vh'});
+      
       // console.log("window height is: " + $(window).height());
       // console.log("shop height is: " + $(".shop").outerHeight());
       // console.log("default yellowbox height: " + $(".yellowbox").outerHeight());
