@@ -451,7 +451,7 @@ a.yellow {
 	float: right;
 	display: none;
 	margin-right: -3.9vw;
-	margin-top: 5px;
+	margin-top: 6px;
 }
 
 #mc_embed_signup input {
@@ -476,7 +476,7 @@ a.yellow {
 
 #mc_embed_signup .subwrapper {
 	color: white;
-	margin-top: 0.5vh;
+	margin-top: 5px;
 	/*height: 27px;*/
 	text-align: left;
 }
