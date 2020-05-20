@@ -216,7 +216,7 @@ $(function() {
         $(".credits").toggle();
         if ($('.creditstext').css('visibility') == 'visible') {
             $('.creditstext').css('visibility','hidden');
-            jsConveyor1.pauseAnim();
+            // jsConveyor1.pauseAnim();
         }
     });
 });
@@ -224,23 +224,26 @@ $(function() {
 //CREDITS - DESKTOP
 
 // window.jsConveyor1 = "hello";
-$(function() {
-    window.jsConveyor1 = $('.js-conveyor-1').jConveyorTicker({
-      start_paused: true
-    });
-});
+// $(function() {
+//     window.jsConveyor1 = $('.js-conveyor-1').jConveyorTicker({
+//       start_paused: true
+//     });
+// });
 
 $(function() {
     $(".credits").click(function(){
         // $(".creditstext").toggle();
         if ( $('.creditstext').css('visibility') == 'hidden' ) {
             $('.creditstext').css('visibility','visible');
-            jsConveyor1.playAnim();
+            startScroll();
+            // jsConveyor1.playAnim();
         } else {
             $('.creditstext').css('visibility','hidden');
-            jsConveyor1.pauseAnim();
+            // jsConveyor1.pauseAnim();
         }
     });
 });
 
-
+function startScroll() {
+  $('.js-conveyor-1').jConveyorTicker();
+}

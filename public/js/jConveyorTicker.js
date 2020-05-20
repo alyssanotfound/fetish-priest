@@ -10,7 +10,7 @@
  * Project home:
  *   https://github.com/lluz/jquery-conveyor-ticker
  *
- * Version:  1.1.0.beta
+ * Version:  1.0.2
  *
  */
 
@@ -25,13 +25,11 @@
         var settings = {
             anim_duration: 200,
             reverse_elm: false,
-            force_loop: false,
-            start_paused: false,
+            force_loop: false
         };
         var cycle_duration = settings.anim_duration;
         var reverse_commute = settings.reverse_elm;
         var initialization_forced = settings.force_loop;
-        var paused_oninit = settings.start_paused;
         
         if (options) {
             if ( options.anim_duration !== undefined ) {
@@ -46,199 +44,135 @@
                 initialization_forced = options.force_loop;
             }
 
-            if ( options.start_paused !== undefined ) {
-                paused_oninit = options.start_paused;
-            }
-
             $.extend(settings, options);
         }
 
-        var $self = $(this);
-        var $list = $self.children('ul');
+        this.each(function(){
+            var $wrap = $(this);
+            var $list = $wrap.children('ul');
 
-        var output = {
+            $list
+            .css({
+                'margin': '0',
+                'padding': '0',
+                'list-style': 'none'
+            })
+            .children('li')
+            .css({
+                'display': 'inline-block'
+            });
 
-            'init': function(){
+            var $listRawWidth = $list.width();
+            var $parentWidth = $list.parent().width();
+            var $parent1stThreshold = ($parentWidth / 2) - 20;
 
-                $self.each(function(){
+            $list
+            .removeAttr('style')
+            .children('li')
+            .removeAttr('style');
 
-                    $(this)
-                    .unbind().removeData()
-                    .removeClass('jctkr-wrapper jctkr-initialized');
+            $wrap.addClass('jctkr-wrapper');
 
-                    $list
-                    .unbind().removeData()
-                    .removeAttr('style')
-                    .find('.clone').remove().end()
-                    .css({
-                        'margin': '0',
-                        'padding': '0',
-                        'list-style': 'none'
-                    })
-                    .children('li')
-                    .css({
-                        'display': 'inline-block'
+            var conveyorInit = function(){
+                var $listItems1stClone = $list.clone().children('li');
+                $list.append($listItems1stClone);
+
+                var listTotalWidth = 0;
+                $list.children().each(function(){
+                    listTotalWidth += $(this).outerWidth();
+                });
+                $list.width(listTotalWidth);
+
+                var conveyorAnimate = function(action){
+                    var tw = $list.width();
+                    var tp = $list.position().left;
+                    var operator = '-';
+                    var direction = 'normal';
+                    var tcal;
+
+                    if (action !== undefined && action === 'reverse'){
+                        tcal = (tw / 2);
+                        if (tp > 0){
+                            $list.css('left', '-' + tcal + 'px');
+                            conveyorAnimate('reverse');
+                            return;
+                        }
+                        operator = '+';
+                        direction = 'reverse';
+                    }
+                    else {
+                        tcal = -1 * (tw / 2);
+                        if (tp < tcal){
+                            var toffs = -1 * (tcal - tp);
+                            $list.css('left', toffs + 'px');
+                            conveyorAnimate(direction);
+                            return;
+                        }
+                    }
+
+                    $list.animate({
+                        left: operator + '=10px'
+                    }, cycle_duration, 'linear', function(){
+                        conveyorAnimate(direction);
                     });
-        
-                    var $listRawWidth = $list.width();
-                    var $parentWidth = $list.parent().width();
-                    var $parent1stThreshold = ($parentWidth / 2) - 20;
-        
-                    $list
-                    .removeAttr('style')
-                    .children('li')
-                    .removeAttr('style');
-        
-                    $self.addClass('jctkr-wrapper');
-        
-                    var conveyorInit = function(){
-                        var $listItems1stClone = $list.clone().children('li');
-                        $listItems1stClone.each(function(){
-                            $(this).addClass('clone');
-                        });
-                        $list.append($listItems1stClone);
-        
-                        var listTotalWidth = 0;
-                        $list.children().each(function(){
-                            listTotalWidth += $(this).outerWidth();
-                        });
-                        $list.width(listTotalWidth);
-        
-                        $self.hover(function(){
-                            output.pauseAnim();
-                        }, function(){
-                            output.pauseAnim();
-                            output.conveyorAnimate('normal');
-                        });
-        
-                        if ( reverse_commute ){
-                            $self.prev('.jctkr-label')
-                            .hover(function(){
-                                output.pauseAnim();
-                                output.conveyorAnimate('reverse');
-                            }, function(){
-                                output.pauseAnim();
-                                output.conveyorAnimate('normal');
-                            }).click(function(){
-                                return false;
-                            });
-                        }
-                        output.conveyorAnimate('normal');
-                    };
-        
-                    if ( $listRawWidth >= $parent1stThreshold ){
-                        conveyorInit();
-                    }
-                    else if ( initialization_forced ){
-                        var $itemsWidth, $containerWidth = 0;
-                        var itemsReplicate = function(){
-                            var $listItems1stClone = $list.clone().children('li');
-                            $listItems1stClone.each(function(){
-                                $(this).addClass('clone');
-                            });
-                            $list.append($listItems1stClone);
-        
-                            $itemsWidth = $list.width();
-                            $containerWidth = $list.parent().width();
-        
-                            if ( $itemsWidth < $containerWidth ){
-                                itemsReplicate();
-                            }
-                            else {
-                                conveyorInit();
-                                return false;
-                            }
-                        };
-        
+                };
+
+                $wrap
+                .hover(function(){
+                    $list.stop();
+                }, function(){
+                    $list.stop();
+                    conveyorAnimate('normal');
+                });
+
+                if ( reverse_commute ){
+                    $wrap.prev('.jctkr-label')
+                    .hover(function(){
+                        $list.stop();
+                        conveyorAnimate('reverse');
+                    }, function(){
+                        $list.stop();
+                        conveyorAnimate('normal');
+                    }).click(function(){
+                        return false;
+                    });
+                }
+                conveyorAnimate('normal');
+            };
+
+            if ( $listRawWidth >= $parent1stThreshold ){
+                conveyorInit();
+            }
+            else if ( initialization_forced ){
+                var $itemsWidth, $containerWidth = 0;
+                var itemsReplicate = function(){
+                    var $listItems1stClone = $list.clone().children('li');
+                    $list.append($listItems1stClone);
+
+                    $itemsWidth = $list.width();
+                    $containerWidth = $list.parent().width();
+
+                    if ( $itemsWidth < $containerWidth ){
                         itemsReplicate();
-        
-                        while ( $itemsWidth < $containerWidth ) {
-                            if ( $itemsWidth >= $parent1stThreshold ) {
-                                conveyorInit();
-                                break;
-                            }
-                            itemsReplicate();
-                        }
                     }
-
-                    $self.addClass('jctkr-initialized');
-
-                });
-
-                if ( paused_oninit ){
-                    output.pauseAnim();
-                }
-
-            },
-
-            'destroy': function(){
-
-                $self.each(function(){
-
-                    output.pauseAnim();
-
-                    $(this)
-                    .unbind().removeData()
-                    .removeClass('jctkr-wrapper jctkr-initialized');
-
-                    $list
-                    .unbind().removeData()
-                    .removeAttr('style')
-                    .find('.clone').remove();
-
-                });
-
-            },
-
-            'conveyorAnimate': function(action){
-
-                var tw = $list.width();
-                var tp = $list.position().left;
-                var operator = '-';
-                var direction = 'normal';
-                var tcal;
-
-                if (action !== undefined && action === 'reverse'){
-                    tcal = (tw / 2);
-                    if (tp > 0){
-                        $list.css('left', '-' + tcal + 'px');
-                        output.conveyorAnimate('reverse');
-                        return;
+                    else {
+                        conveyorInit();
+                        return false;
                     }
-                    operator = '+';
-                    direction = 'reverse';
-                }
-                else {
-                    tcal = -1 * (tw / 2);
-                    if (tp < tcal){
-                        var toffs = -1 * (tcal - tp);
-                        $list.css('left', toffs + 'px');
-                        output.conveyorAnimate(direction);
-                        return;
+                };
+
+                itemsReplicate();
+
+                while ( $itemsWidth < $containerWidth ) {
+                    if ( $itemsWidth >= $parent1stThreshold ) {
+                        conveyorInit();
+                        break;
                     }
+                    itemsReplicate();
                 }
-
-                $list.stop().animate({
-                    left: operator + '=10px'
-                }, cycle_duration, 'linear', function(){
-                    output.conveyorAnimate(direction);
-                });
-
-            },
-
-            'pauseAnim': function(){
-                $list.stop();
-            },
-
-            'playAnim': function(){
-                output.conveyorAnimate('normal');
-            },
-
-        };
-
-        output.init();
-        return output;
-
+            }
+            $wrap.addClass('jctkr-initialized');
+        });
     };
 
 })(jQuery, window, document);
