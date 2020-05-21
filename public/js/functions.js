@@ -89,7 +89,7 @@ $(function() {
         //     color: "white", 
         //     backgroundColor: "blue"
         // });
-        // alert("highlight off");
+        alert("highlight off");
         buttonson = false;
     	} else if (buttonson == false) {
         //make divs visible
@@ -101,8 +101,9 @@ $(function() {
             $('.info-button').css("background-image", "url(../assets/info-button.png");
         }
 		    $( ".circle" ).removeClass('hidden');
-        // alert("highlight on");
+        
         $(".shop p").addClass('yellowOn');
+        alert("highlight on");
         // $(".shop p").css({
         //     color: "blue", 
         //     backgroundColor: "yellow"
