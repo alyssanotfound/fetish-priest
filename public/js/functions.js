@@ -87,6 +87,7 @@ $(function() {
                 color: "white", 
                 backgroundColor: "blue"
             });
+            console.log("highlight off");
             buttonson = false;
     	} else if (buttonson == false) {
             //make divs visible
@@ -97,12 +98,13 @@ $(function() {
                 $(".textbox").addClass("hidden");
                 $('.info-button').css("background-image", "url(../assets/info-button.png");
             }
-    		$( ".circle" ).removeClass('hidden');
-    		buttonson = true;
+    		    $( ".circle" ).removeClass('hidden');
+            console.log("highlight on");
             $(".shop p").css({
                 color: "blue", 
                 backgroundColor: "yellow"
             });
+            buttonson = true;
     	}
 	});
 });
