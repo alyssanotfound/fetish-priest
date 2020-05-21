@@ -2,13 +2,15 @@ var buttonson = false;
 var currItem;
 var textOnDesktop = false;
 var textHover = false;
-
+var ww = document.body.clientWidth;
 
 //CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
-  
+  //don't add hover shop effect if mobile bc is sticky
+  if (ww >= 600) {
+    $("<style type='text/css'> .shop p:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
+  }
   var alterClass = function() {
-    var ww = document.body.clientWidth;
     if (ww < 600) {
       var vh = window.innerHeight * 0.01;
       // Then we set the value in the --vh custom property to the root of the document
@@ -37,7 +39,6 @@ jQuery(document).ready(function($) {
       $(".dash").addClass("remove");
       // alert("Size of window is, height: " + $(window).height() + ", width: " + $(window).width());
     } else if (ww >= 601) {
-      $("<style type='text/css'> .shop p:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
       // var position = $(".creditstext").position();
