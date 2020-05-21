@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
       $(".dash").addClass("remove");
       // alert("Size of window is, height: " + $(window).height() + ", width: " + $(window).width());
     } else if (ww >= 601) {
+      $("<style type='text/css'> .shop p:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
       // var position = $(".creditstext").position();
@@ -116,14 +117,14 @@ $(function() {
 });
 
 //fix shop button hover issue
-function fix() {
-  var el = this;
-  var par = el.parentNode;
-  var next = el.nextSibling;
-  alert(el);
-  par.removeChild(el);
-  setTimeout(function() {par.insertBefore(el, next);}, 0)
-}
+// function fix() {
+//   var el = this;
+//   var par = el.parentNode;
+//   var next = el.nextSibling;
+//   alert(el);
+//   par.removeChild(el);
+//   setTimeout(function() {par.insertBefore(el, next);}, 0)
+// }
 
 //INDIVIDUAL PRODUCT BUTTONS
 $(function() {
