@@ -21,6 +21,8 @@ jQuery(document).ready(function($) {
       $(".logo").css({'left': dis  + 'px'});
       //remove inline height assigned in desktop mode, if there
       $(".textbox").css("height","");
+      $("#mc_embed_signup").css({'top':''});
+      $(".logo").css({'top':''});
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
       // var currH = calc(vh*80)

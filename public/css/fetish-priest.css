@@ -204,7 +204,7 @@ body {
 .logo {
 	position: relative;
 	float: right;
-	margin-top: 29vh;
+	margin-top: 29.5vh;
 	margin-right: 0.5vw;
 	z-index: 1000;
 }
@@ -764,12 +764,32 @@ a.yellow {
 	#mc_embed_signup input {
 		position: absolute;
 		font-size: 2vw;
-		margin:0;
-		width: 63.33vw;
+		margin-left:0.5vw;
+		margin-right:0.5vw;
+		width: 59vw;
 		padding: 0;
     	/*height: 4.165vh;*/
     	height: calc(var(--vh, 1vh) * 4.165);
     	padding-left: 2vw;
+	}
+
+	.mc-field-group {
+		padding-left: 0.5vw;
+		background-color: yellow;
+		width: 63.33vw;
+		height: calc(var(--vh, 1vh) * 4.165);
+	}
+
+	.mc-field-group:first-child {
+		border-top: dashed;
+		border-color: yellow;
+		border-width: 0.05vw;
+	}
+
+	.mc-field-group:nth-child(2) {
+		border-bottom: dashed;
+		border-color: yellow;
+		border-width: 0.05vw;
 	}
 
 	#mc_embed_signup #mc-embedded-subscribe {
