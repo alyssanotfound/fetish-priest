@@ -710,6 +710,10 @@ a.yellow {
 		margin-bottom: 0;
 	}
 
+	#textbox-inner-w .condense {
+		margin-right: 50px;
+	}
+
 	.p2-desktop {
 		display: none;
 	}
