@@ -90,6 +90,7 @@ $(function() {
         //     backgroundColor: "blue"
         // });
         alert("highlight off");
+        alert($(".shop p").attr("class");
         buttonson = false;
     	} else if (buttonson == false) {
         //make divs visible
@@ -104,6 +105,7 @@ $(function() {
         
         $(".shop p").addClass('yellowOn');
         alert("highlight on");
+        alert($(".shop p").attr("class");
         // $(".shop p").css({
         //     color: "blue", 
         //     backgroundColor: "yellow"
