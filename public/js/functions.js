@@ -2,10 +2,11 @@ var buttonson = false;
 var currItem;
 var textOnDesktop = false;
 var textHover = false;
-var ww = document.body.clientWidth;
+
 
 //CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
+  var ww = document.body.clientWidth;
   //don't add hover shop effect if mobile bc is sticky
   if (ww >= 600) {
     $("<style type='text/css'> .shop p:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
