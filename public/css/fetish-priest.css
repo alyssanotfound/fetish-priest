@@ -460,12 +460,19 @@ a.yellow {
 	outline: none;
 	border: none;
 	color: black;
-	padding: 0.5vw;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
 	font-size: 0.7vw;
-	width: 11.3vw;
+	width: 11vw;
 	-webkit-appearance: none;
 	-webkit-border-radius:0;
 	border-radius:0;
+}
+
+.mc-field-group {
+	padding-left: 0.5vw;
+	background-color: yellow;
+	width: 11.7vw;
 }
 
 #mc_embed_signup #mce-LNAME {
