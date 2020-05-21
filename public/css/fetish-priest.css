@@ -734,7 +734,7 @@ a.yellow {
 	.consign {
 		text-align: center;
 		width: 48vw;
-		margin-top: calc(var(--vh, 1vh) * 1);
+		margin-top: calc(var(--vh, 1vh) * 0.4);
 	}
 
 	.textbox p.textalign-rt {

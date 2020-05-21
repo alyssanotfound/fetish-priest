@@ -15,9 +15,9 @@ jQuery(document).ready(function($) {
       document.documentElement.style.setProperty('--vh', `${vh}px`);
       //find width of logo to place it evenly
       var logoW = $(".logo img").width();
-      console.log(logoW);
+      // console.log(logoW);
       var dis = ((ww / 6) - logoW) / 2;
-      console.log(dis);
+      // console.log(dis);
       $(".logo").css({'left': dis  + 'px'});
       //remove inline height assigned in desktop mode, if there
       $(".textbox").css("height","");
@@ -190,12 +190,12 @@ $(function() {
 $(function() {
     $( ".textbox" ).hover(
       function() {
-        console.log("mouse in on textbox");
+        // console.log("mouse in on textbox");
         if (textHover == true ){
            revealText(); 
         }
       }, function() {
-        console.log("mouse out in on textbox");
+        // console.log("mouse out in on textbox");
         // console.log("hide");
         if (textOnDesktop == false){
         hideText();
