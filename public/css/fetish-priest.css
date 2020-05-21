@@ -691,7 +691,7 @@ a.yellow {
 		margin-left: auto;
 		top: calc(var(--vh, 1vh) * 20);
 		/*height: 50vh;*/
-		/*line-height: 2.5vw;	*/
+		line-height: 2.4vw;	
 		height: calc(var(--vh, 1vh) * 80);
 		/*hyphens: auto;*/
 	}
