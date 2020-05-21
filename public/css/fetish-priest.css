@@ -645,6 +645,11 @@ a.yellow {
 		display: inline-block;
 	}
 
+	.shop p:hover {
+		background-color: blue;
+		color: yellow;
+	}
+
 	p.yellowbox {
 		left: 0;
 		text-indent:0;
