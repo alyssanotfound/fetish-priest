@@ -75,36 +75,37 @@ jQuery(document).ready(function($) {
 
 //SHOP BUTTON
 $(function() {
-    $( ".shop" ).click(function() {
-        var ww = document.body.clientWidth;
+    $( ".shop" ).click(function(e) {
+      e.preventDefault();
+      var ww = document.body.clientWidth;
     	if (buttonson == true) {  		
     		$( ".circle" ).addClass('hidden');
     		//just in case any descriptions are on, loop thru and make sure they are all hidden
     		$(".desc").addClass("hidden");
-            //remove item divs so they arent overlapping other info
-            $(".wrap").addClass('remove');
-            $(".shop p").css({
-                color: "white", 
-                backgroundColor: "blue"
-            });
-            alert("highlight off");
-            buttonson = false;
+        //remove item divs so they arent overlapping other info
+        $(".wrap").addClass('remove');
+        $(".shop p").css({
+            color: "white", 
+            backgroundColor: "blue"
+        });
+        alert("highlight off");
+        buttonson = false;
     	} else if (buttonson == false) {
-            //make divs visible
-            $(".wrap").removeClass('remove');
-            //turn on buttons but first turn off textbox if its visible
-            if ($(".textbox").hasClass("hidden")==false && ww < 600) {
-                //textbox is already open, so close it
-                $(".textbox").addClass("hidden");
-                $('.info-button').css("background-image", "url(../assets/info-button.png");
-            }
-    		    $( ".circle" ).removeClass('hidden');
-            alert("highlight on");
-            $(".shop p").css({
-                color: "blue", 
-                backgroundColor: "yellow"
-            });
-            buttonson = true;
+        //make divs visible
+        $(".wrap").removeClass('remove');
+        //turn on buttons but first turn off textbox if its visible
+        if ($(".textbox").hasClass("hidden")==false && ww < 600) {
+            //textbox is already open, so close it
+            $(".textbox").addClass("hidden");
+            $('.info-button').css("background-image", "url(../assets/info-button.png");
+        }
+		    $( ".circle" ).removeClass('hidden');
+        alert("highlight on");
+        $(".shop p").css({
+            color: "blue", 
+            backgroundColor: "yellow"
+        });
+        buttonson = true;
     	}
 	});
 });
