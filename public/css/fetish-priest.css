@@ -693,7 +693,7 @@ a.yellow {
 		/*height: 50vh;*/
 		line-height: 2.1vw;	
 		height: calc(var(--vh, 1vh) * 80);
-		hyphens: auto;
+		/*hyphens: auto;*/
 	}
 
 	.textbox p {
@@ -712,7 +712,7 @@ a.yellow {
 	}
 
 	#textbox-inner-w .condense {
-		margin-right: 50px;
+		margin-right: 40px;
 	}
 
 	.p2-desktop {
