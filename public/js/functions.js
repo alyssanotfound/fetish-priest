@@ -256,3 +256,16 @@ $(function() {
 function startScroll() {
   $('.js-conveyor-1').jConveyorTicker();
 }
+
+//RESET MAILING LIST on SUBMIT
+$(function() {
+  $("#mc-embedded-subscribe").click(function(){
+    console.log("form submitted");
+    $("#mc_embed_signup").toggle();
+    $(".credits").toggle();
+    if ($('.creditstext').css('visibility') == 'visible') {
+        $('.creditstext').css('visibility','hidden');
+        // jsConveyor1.pauseAnim();
+    }
+  });
+});
