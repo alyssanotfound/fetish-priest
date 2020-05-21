@@ -644,6 +644,7 @@ a.yellow {
 		margin: 0;
 		height: calc(var(--vh, 1vh) * 20.83);
 		width: 48.1vw;
+		line-height: 2.3vw;
 		/*top: -8.33vh;*/
 		/*z-index: 50;*/
 	}
@@ -713,6 +714,7 @@ a.yellow {
 
 	#textbox-inner-w .condense {
 		margin-right: 40px;
+		text-align: left;
 	}
 
 	.p2-desktop {
