@@ -604,10 +604,11 @@ a.yellow {
 
 	.desc {
 		position: relative;
+		font-family: 'Trim-Regular', Arial;
 		display: block;
 		margin: auto;
 		background: blue;
-		padding-top: 1vw;
+		padding-top: 1.3vw;
 		padding-bottom: 1vw;
 		width: 23vw;
 		/*height: 28px; */
@@ -615,6 +616,11 @@ a.yellow {
 		margin-top: 5px; 
 		text-align: center;
 		font-size: 2.3vw !important;
+	}
+
+	.desc a:hover {
+		background-color: blue;
+		color: white;
 	}
 
 	.num {
