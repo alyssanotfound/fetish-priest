@@ -266,6 +266,7 @@ img {
 .shop p.yellowOn {
 	background-color: yellow;
  	color: blue;
+ 	line-height: 2.8vw;
 }
 
 .consign {

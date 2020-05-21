@@ -45,10 +45,10 @@ jQuery(document).ready(function($) {
       // var position = $(".creditstext").position();
       var position = $('.info-desktop').offset();
       var h = $('.info-desktop').outerHeight();
-      console.log(h);
+      // console.log(h);
       // console.log(position);
       var mTop = position.top + h;
-      console.log(mTop);
+      // console.log(mTop);
       $("#mc_embed_signup").css({'top': mTop  + 'px'});
       // $(".logo").css({'top': mTop  + 'vh'});
       // console.log("window height is: " + $(window).height());
