@@ -607,17 +607,18 @@ a.yellow {
 		display: block;
 		margin: auto;
 		background: blue;
-		padding: 0; 
+		padding: 0.5vw; 
 		width: 83px;
-		height: 28px; 
-		line-height: 12px;
+		/*height: 28px; */
+		line-height: 2.3vw;
 		margin-top: 5px; 
 		text-align: center;
-		font-size: 1.5vw !important;
+		font-size: 2.3vw !important;
 	}
 
 	.num {
 		font-size: 3vw;
+		line-height: 3vw;
 	}
 
 	.shop {
