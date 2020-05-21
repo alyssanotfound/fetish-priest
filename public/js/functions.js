@@ -6,7 +6,7 @@ var textHover = false;
 
 //CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
-
+  
   var alterClass = function() {
     var ww = document.body.clientWidth;
     if (ww < 600) {
@@ -90,8 +90,8 @@ $(function() {
         //     color: "white", 
         //     backgroundColor: "blue"
         // });
-        alert("highlight off");
-        alert($(".shop p").attr("class"));
+        // alert("highlight off");
+        // alert($(".shop p").attr("class"));
         buttonson = false;
     	} else if (buttonson == false) {
         //make divs visible
@@ -105,8 +105,8 @@ $(function() {
 		    $( ".circle" ).removeClass('hidden');
         
         $(".shop p").addClass('yellowOn');
-        alert("highlight on");
-        alert($(".shop p").attr("class"));
+        // alert("highlight on");
+        // alert($(".shop p").attr("class"));
         // $(".shop p").css({
         //     color: "blue", 
         //     backgroundColor: "yellow"
