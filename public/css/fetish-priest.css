@@ -738,7 +738,9 @@ a.yellow {
 	}
 
 	.textbox p.textalign-rt {
-		font-size: 1.4vw;
+		font-size: 1.6vw;
+		line-height: 1.6vw;
+		margin-top: 0.4vw;
 	}
 
 	.logo {
