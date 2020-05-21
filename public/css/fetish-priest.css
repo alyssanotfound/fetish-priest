@@ -258,10 +258,10 @@ img {
    	line-height: 0.75vw;
 }
 
-/*.shop p:hover {
+.shop p:hover {
  	background-color: yellow;
  	color: blue;
-}*/
+}
 
 .shop p.yellowOn {
 	background-color: yellow;
