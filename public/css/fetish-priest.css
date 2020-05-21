@@ -266,7 +266,7 @@ img {
 .shop p.yellowOn {
 	background-color: yellow;
  	color: blue;
- 	line-height: 2.8vw;
+ 	/*line-height: 2.8vw;*/
 }
 
 .consign {
@@ -649,6 +649,8 @@ a.yellow {
 		line-height: 2.4vw;
 		text-align: center;
 		display: inline-block;
+		padding-bottom: 0.4vw;
+    	padding-top: 0.35vw;
 	}
 
 	/*.shop p:hover {
