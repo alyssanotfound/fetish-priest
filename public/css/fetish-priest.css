@@ -630,10 +630,10 @@ a.yellow {
 	}
 
 	.shop p {
-		margin-left: 22vw;
-		width: 6vw;
-		font-size: 2.2vw;
-		line-height: 2.2vw;
+		margin-left: 21.55vw;
+    	width: 6.9vw;
+		font-size: 2.3vw;
+		line-height: 2.3vw;
 		text-align: center;
 		display: inline-block;
 	}
@@ -663,7 +663,7 @@ a.yellow {
 	}
 
 	.info-mobile {
-		line-height: 2vw;
+		line-height: 2.3vw;
 		/*padding-top: 14px;*/
 		width: 100vw;
 		/*height: 4.35vh;*/
@@ -772,7 +772,7 @@ a.yellow {
 
 	#mc_embed_signup input {
 		position: absolute;
-		font-size: 2vw;
+		font-size: 2.3vw;
 		margin-left:0.5vw;
 		margin-right:0.5vw;
 		width: 59vw;
