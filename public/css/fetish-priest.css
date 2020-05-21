@@ -473,10 +473,20 @@ a.yellow {
 	padding-left: 0.5vw;
 	background-color: yellow;
 	width: 11.7vw;
+}
+
+.mc-field-group:first-child {
+	border-top: dashed;
+	border-color: yellow;
+	border-width: 0.05vw;
+}
+
+.mc-field-group:nth-child(2) {
 	border-bottom: dashed;
 	border-color: yellow;
 	border-width: 0.05vw;
 }
+
 
 #mc_embed_signup #mce-LNAME {
 	border-bottom: dashed;
