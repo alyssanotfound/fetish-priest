@@ -652,7 +652,7 @@ a.yellow {
 	.textbox .yellowbox .btm {
 		padding: 0;
 		/*padding-bottom: 2vh;*/
-		padding-bottom: calc(var(--vh, 1vh) * 2);
+		padding-bottom: calc(var(--vh, 1vh) * 1);
 		width: 48vw;
 	}
 
