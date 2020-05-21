@@ -75,8 +75,8 @@ jQuery(document).ready(function($) {
 
 //SHOP BUTTON
 $(function() {
-    $( ".shop" ).click(function(e) {
-      e.preventDefault();
+    $( ".shop" ).click(function() {
+      // e.preventDefault();
       var ww = document.body.clientWidth;
     	if (buttonson == true) {  		
     		$( ".circle" ).addClass('hidden');
@@ -106,7 +106,7 @@ $(function() {
             backgroundColor: "yellow"
         });
         buttonson = true;
-    	}
+      }
 	});
 });
 

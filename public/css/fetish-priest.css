@@ -259,9 +259,14 @@ img {
 }
 
 .shop p:hover {
- 	background-color: yellow !important;
- 	color: blue !important;
+ 	background-color: yellow;
+ 	color: blue;
 }
+/*
+.shop-on {
+	background-color: yellow !important;
+ 	color: blue !important;
+}*/
 
 .consign {
 	position: absolute;
