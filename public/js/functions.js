@@ -84,10 +84,11 @@ $(function() {
     		$(".desc").addClass("hidden");
         //remove item divs so they arent overlapping other info
         $(".wrap").addClass('remove');
-        $(".shop p").css({
-            color: "white", 
-            backgroundColor: "blue"
-        });
+        $(".shop p").removeClass('yellowOn');
+        // $(".shop p").css({
+        //     color: "white", 
+        //     backgroundColor: "blue"
+        // });
         // alert("highlight off");
         buttonson = false;
     	} else if (buttonson == false) {
@@ -101,10 +102,11 @@ $(function() {
         }
 		    $( ".circle" ).removeClass('hidden');
         // alert("highlight on");
-        $(".shop p").css({
-            color: "blue", 
-            backgroundColor: "yellow"
-        });
+        $(".shop p").addClass('yellowOn');
+        // $(".shop p").css({
+        //     color: "blue", 
+        //     backgroundColor: "yellow"
+        // });
         buttonson = true;
       }
 	});
@@ -135,10 +137,11 @@ $(function() {
             $(".desc").addClass("hidden");
             //remove item divs so they arent overlapping other info
             $(".wrap").addClass('remove');
-            $(".shop p").css({
-                color: "white", 
-                backgroundColor: "blue"
-            });
+            $(".shop p").removeClass('yellowOn');
+            // $(".shop p").css({
+            //     color: "white", 
+            //     backgroundColor: "blue"
+            // });
             } 
             //now open textbox
             $(".textbox").removeClass("hidden");

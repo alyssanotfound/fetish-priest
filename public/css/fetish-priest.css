@@ -262,11 +262,11 @@ img {
  	background-color: yellow;
  	color: blue;
 }
-/*
-.shop-on {
-	background-color: yellow !important;
- 	color: blue !important;
-}*/
+
+.shop p.yellowOn {
+	background-color: yellow;
+ 	color: blue;
+}
 
 .consign {
 	position: absolute;
@@ -650,10 +650,10 @@ a.yellow {
 		display: inline-block;
 	}
 
-	.shop p:hover {
+	/*.shop p:hover {
 		background-color: blue;
 		color: yellow;
-	}
+	}*/
 
 	p.yellowbox {
 		left: 0;
