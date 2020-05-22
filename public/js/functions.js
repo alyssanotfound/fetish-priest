@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
   }
   var alterClass = function() {
     if (ww < 600) {
-      // v = "mobile";
+      v = "mobile";
       console.log("m resize, now: " + v);
       var vh = window.innerHeight * 0.01;
       // Then we set the value in the --vh custom property to the root of the document
