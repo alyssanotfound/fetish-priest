@@ -2,7 +2,7 @@ var buttonson = false;
 var currItem;
 var textOnDesktop = false;
 var textHover = false;
-
+var v;
 
 //CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
@@ -13,6 +13,8 @@ jQuery(document).ready(function($) {
   }
   var alterClass = function() {
     if (ww < 600) {
+      // v = "mobile";
+      console.log("m resize, now: " + v);
       var vh = window.innerHeight * 0.01;
       // Then we set the value in the --vh custom property to the root of the document
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -28,6 +30,7 @@ jQuery(document).ready(function($) {
       $(".logo").css({'top':''});
       $(".textbox").addClass("hidden");
       $("#readmore").addClass("hidden");
+      // $(".textbox").addClass("hidden");
       // var currH = calc(vh*80)
       // $(".textbox").height(calc(vh * 80));
       // $('.yellowbox span').addClass("remove");
@@ -40,8 +43,11 @@ jQuery(document).ready(function($) {
       $(".dash").addClass("remove");
       // alert("Size of window is, height: " + $(window).height() + ", width: " + $(window).width());
     } else if (ww >= 601) {
+      v = "desktop";
+      console.log("d resize, now: " + v);
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
+      $(".logo").css("left","");
       // var position = $(".creditstext").position();
       var position = $('.info-desktop').offset();
       var h = $('.info-desktop').outerHeight();
@@ -87,7 +93,12 @@ $(function() {
     		$(".desc").addClass("hidden");
         //remove item divs so they arent overlapping other info
         $(".wrap").addClass('remove');
-        $(".shop p").removeClass('yellowOn');
+        // $(".shop p").removeClass('yellowOn');
+        if (v == "mobile") {
+          $(".shop").removeClass('yellowOn'); 
+        } else if (v == "desktop") {
+          $(".shop p").removeClass('yellowOn');
+        }
         // $(".shop p").css({
         //     color: "white", 
         //     backgroundColor: "blue"
@@ -106,7 +117,12 @@ $(function() {
         }
 		    $( ".circle" ).removeClass('hidden');
         
-        $(".shop p").addClass('yellowOn');
+        // $(".shop p").addClass('yellowOn');
+        if (v == "mobile") {
+          $(".shop").addClass('yellowOn'); 
+        } else if (v == "desktop") {
+          $(".shop p").addClass('yellowOn');
+        }
         // alert("highlight on");
         // alert($(".shop p").attr("class"));
         // $(".shop p").css({
@@ -153,7 +169,12 @@ $(function() {
             $(".desc").addClass("hidden");
             //remove item divs so they arent overlapping other info
             $(".wrap").addClass('remove');
-            $(".shop p").removeClass('yellowOn');
+            // $(".shop p").removeClass('yellowOn');
+            if (v == "mobile") {
+              $(".shop").removeClass('yellowOn'); 
+            } else if (v == "desktop") {
+              $(".shop p").removeClass('yellowOn');
+            }
             // $(".shop p").css({
             //     color: "white", 
             //     backgroundColor: "blue"
