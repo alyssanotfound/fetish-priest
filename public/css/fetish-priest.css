@@ -45,7 +45,7 @@ body {
 }
 
 
-/* ticker functionality */
+/* SCROLL CREDITS FUCTIONALITY */
 .jctkr-wrapper,
 .jctkr-wrapper *{
   box-sizing: border-box;
@@ -94,7 +94,7 @@ body {
   display: inline-block;
 }
 
-/* ticker functionality end */
+/* SCROLL CREDITS END */
 
 
 #background-img {
@@ -151,7 +151,6 @@ body {
 	position: absolute;
 	width: 130px;
 	height: 70px;
-	/*z-index: 50;*/
 }
 
 .hidden {
@@ -258,15 +257,9 @@ img {
    	line-height: 0.75vw;
 }
 
-/*.shop p:hover {
- 	background-color: yellow;
- 	color: blue;
-}*/
-
 body .yellowOn {
 	background-color: yellow;
  	color: blue;
- 	/*line-height: 2.8vw;*/
 }
 
 .consign {
@@ -286,7 +279,6 @@ body .yellowOn {
 	position: absolute;
 	top: 2.5vw;
 	width: 25vw;
-	/*height: 96vh;*/
 	margin-left: 0;
 	background-color: black;
 	left: 0;
@@ -296,25 +288,10 @@ body .yellowOn {
 
 .textbox p {
 	position: relative;
-	/*bottom-margin:0;*/
 	padding-left: 20px;
 	padding-right: 20px;
-	/*padding-top: 8px;*/
 	padding-bottom: 16px;
-	/*margin: 0;*/
-	/*margin-block-start:0; 
-	margin-block-end:0; 
-	margin-inline-start:0; 
-	margin-inline-end:0;
-	padding-block-start:0; 
-	padding-block-end:0; 
-	padding-inline-start:0; 
-	padding-inline-end:0;*/
 }
-
-/*.textbox p .highlight-II {
-	color: yellow;
-}*/
 
 .textbox p .highlightnum {
 	cursor: pointer;
@@ -334,10 +311,6 @@ body .yellowOn {
  	background-color: white;
  	color: blue !important; 
 }
-/*
-.p2-desktop {
-	display: block;
-}*/
 
 #textbox-inner-w.mobile-text {
 	display: none;
@@ -354,8 +327,6 @@ body .yellowOn {
 
 p.yellowbox {
 	width: calc(100% - 40px);
-	/*height: 33vh;*/
-	/*text-indent : 5em;*/
 	position: absolute;
 	background-color: yellow;
 	color: black;
@@ -378,7 +349,6 @@ p.yellowbox {
 .textbox p.textalign-rt {
 	text-align: right;
 	padding-top: 0 !important;
-	/*padding-bottom: 0;*/
 	font-family: 'Trim', Arial;
 	font-size: 0.5vw;
 }
@@ -409,21 +379,7 @@ div.creditstext {
 	padding-top: 0.4vw;
 	padding-bottom: 0.4vw;
 	font-family: 'Trim-Regular', Arial;
-	/*white-space:no-wrap;*/
-	/*overflow:hidden;*/
 }
-
-/*.js-conveyor-1 {*/
-	/*font-size: 0.5vw;*/
-	/*font-family: sans-serif;*/
-/*}*/
-
-
-/*div.creditstext > div.creditsscroll {
-    white-space:nowrap;
-    display:inline;
-    width:auto;
-}*/
 
 a.yellow {
 	color: yellow;
@@ -442,13 +398,7 @@ a.yellow {
 
 #readmore span {
 	cursor: pointer;
-	/*color: yellow;*/
 }
-
-/*#readmore span:hover {
-	background-color: white;
-	color: blue;
-}*/
 
 /* MAILING LIST SUBSCRIPTION */
 #mc_embed_signup {
@@ -503,7 +453,6 @@ a.yellow {
 #mc_embed_signup .subwrapper {
 	color: white;
 	margin-top: 5px;
-	/*height: 27px;*/
 	text-align: left;
 }
 
@@ -514,10 +463,6 @@ a.yellow {
    	background-color: black;
    	display: flex;
    	align-items: center;
-   	/*padding: 0.25vw;*/
-   	/*height: 20px;*/
-   	/*margin-top: 2px;*/
-   	/*margin-left: 5px;*/
 }
 
 #mc_embed_signup #mc-embedded-subscribe {
@@ -533,7 +478,6 @@ a.yellow {
 #mc_embed_signup #mc-embedded-subscribe:hover {
 	background-color: white;
 	color: blue;
-	/*border-color: white;*/
 }
 
 ::placeholder {
@@ -558,7 +502,6 @@ a.yellow {
 		padding: 0;
 		background: url("../imgs/fetish-priest-vert.jpg") no-repeat center; 
 		height: 100%;
-		/*height: calc(var(--vh, 1vh) * 100);*/
 		background-size: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -639,7 +582,6 @@ a.yellow {
 		top: calc(var(--vh, 1vh) * 20);
 		padding-top: 0;
 		padding-bottom: 0;
-		/*line-height: 30px;*/
 	}
 
 	.shop p {
@@ -653,10 +595,10 @@ a.yellow {
     	padding-top: 0.35vw;
 	}
 
-	/*.shop p:hover {
-		background-color: blue;
-		color: yellow;
-	}*/
+	.shop:hover {
+		background-color: yellow;
+		color: blue;
+	}
 
 	p.yellowbox {
 		left: 0;
@@ -665,28 +607,22 @@ a.yellow {
 		height: calc(var(--vh, 1vh) * 20.83);
 		width: 48.1vw;
 		line-height: 2.3vw;
-		/*top: -8.33vh;*/
-		/*z-index: 50;*/
 	}
 
 	.textbox .yellowbox .btm {
 		padding: 0;
-		/*padding-bottom: 2vh;*/
 		padding-bottom: calc(var(--vh, 1vh) * 1);
 		width: 48vw;
 	}
 
 	.info-wrapper {
 		width: 100vw;
-		/*top: 11.67vh;*/
 		top: calc(var(--vh, 1vh) * 11.67);
 	}
 
 	.info-mobile {
 		line-height: 2.6vw;
-		/*padding-top: 14px;*/
 		width: 100vw;
-		/*height: 4.35vh;*/
 		height: calc(var(--vh, 1vh) * 4.35);
 		padding-top: calc(var(--vh, 1vh) * 2);
 		padding-bottom: calc(var(--vh, 1vh) * 2);
@@ -711,20 +647,12 @@ a.yellow {
 		right: 0;
 		margin-left: auto;
 		top: calc(var(--vh, 1vh) * 20);
-		/*height: 50vh;*/
 		line-height: 2.5vw;	
 		height: calc(var(--vh, 1vh) * 80);
-		/*hyphens: auto;*/
 	}
 
 	.textbox p {
 		padding: 1vw;
-		/*font-size: 1.6vw;*/
-		/*padding: 5px;*/
-	}
-
-	#textbox-inner-w {
-		/*padding-bottom: 35px;*/
 	}
 
 	#textbox-inner-w .p01 {
@@ -769,22 +697,16 @@ a.yellow {
 		position: absolute;
 		cursor: pointer;
 		margin: 0;
-		/*top: 1.66vh;*/
 		top: calc(var(--vh, 1vh) * 1.66);
-		/*left: calc(var(--vh, 1vh) * 1.66);*/
-		/*left: 1.66vh;*/
 	}
 
 	.logo img {
-	    /*height: 8.33vh;*/
 	    height: calc(var(--vh, 1vh) * 8.33);
 	    width: calc(var(--vh, 1vh) * 8.33);
-	    /*width: 8.33vh;*/
 	}
 
 	#mc_embed_signup {
 		position: absolute;
-		/*top: 1.66vh;*/
 		top: calc(var(--vh, 1vh) * 1.66);
 		left: 16.66vw;
 		margin: 0;
@@ -797,7 +719,6 @@ a.yellow {
 		margin-right:0.5vw;
 		width: 59vw;
 		padding: 0;
-    	/*height: 4.165vh;*/
     	height: calc(var(--vh, 1vh) * 4.165);
     	padding-left: 2vw;
 	}
@@ -826,14 +747,10 @@ a.yellow {
 		text-align: center;
 		top: 0;
 		width: 20vw;
-		/*height: 8.33vh;*/
 		height: calc(var(--vh, 1vh) * 8.43);
 		z-index: 50;
 		margin: 0;
 		left: 63.34vw;
-		/*border-bottom: solid;
-		border-color: black;
-		border-width: calc(var(--vh, 1vh) * 0.1);*/
 	}
 
 	#mc_embed_signup .subcontents {
@@ -847,7 +764,6 @@ a.yellow {
 	}
 
 	#mc_embed_signup input#mce-EMAIL {
-		/*top: 4.165vh;*/
 		top: calc(var(--vh, 1vh) * 4.165);
 		border-top: dashed;
 		border-color: black;
