@@ -40,6 +40,8 @@ jQuery(document).ready(function($) {
       console.log("d resize, now: " + v);
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
+      var topM = $(".shop").outerHeight();
+      $(".textbox").css({'top': topM + 'px'});
       $(".logo").css('left','');
       var position = $('.info-desktop').offset();
       var h = $('.info-desktop').outerHeight();
