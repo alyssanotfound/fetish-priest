@@ -239,7 +239,7 @@ img {
 	width: 25vw;
 	height: 0.85vw;
     padding-bottom: 0.85vw;
-    padding-top: 0.85vw;
+    padding-top: 0.87vw;
     display: flex;
     align-items: center;
 }
@@ -255,6 +255,8 @@ img {
    	cursor: pointer;
    	font-size: 0.75vw;
    	line-height: 0.75vw;
+   	padding-top: 0.20vw;
+    padding-bottom: 0.08vw;
 }
 
 body .yellowOn {
