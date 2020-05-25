@@ -717,18 +717,19 @@ a.yellow {
 	#mc_embed_signup input {
 		position: absolute;
 		font-size: 2.3vw;
-		margin-left:0.5vw;
-		margin-right:0.5vw;
-		width: 59vw;
+		margin-left:1.5vw;
+		margin-right:1vw;
+		width: 58.34vw;
 		padding: 0;
     	height: calc(var(--vh, 1vh) * 4.1);
     	padding-left: 2vw;
+    	left: 0;
 	}
 
 	.mc-field-group {
 		padding-left: 0.5vw;
 		background-color: yellow;
-		width: 63.33vw;
+		width: 62.84vw;
 		height: calc(var(--vh, 1vh) * 8.43);
 	}
 
