@@ -105,6 +105,8 @@ body {
 	left: 25%;
 	/*background-size: 100%;*/
 	background-size: 1200px auto;
+	background-repeat: no-repeat;
+	background-position: center center;
 	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
