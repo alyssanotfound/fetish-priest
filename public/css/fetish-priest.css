@@ -182,8 +182,10 @@ body {
 }
 
 #piretti-wrapper {
-	left: 73.5vw;
-	top: 57vh;
+	/*left: 73.5vw;
+	top: 57vh;*/
+	left: 1010px;
+    top: 404px;
 }
 
 #bertoiaII-wrapper {
