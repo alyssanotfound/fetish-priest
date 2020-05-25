@@ -103,15 +103,15 @@ body {
 	width: 75%;
 	background: url("../imgs/fetish-priest.jpg"); 
 	left: 25%;
-	/*background-size: 100%;*/
-	background-size: 1200px auto;
+	background-size: 100%;
+	/*background-size: 1200px auto;*/
 	background-repeat: no-repeat;
-	background-position: center;
-	/*-webkit-background-size: cover;
+	/*background-position: center;*/
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: center center;*/
+	background-position: center center;
 }
 
 .circle {
@@ -185,10 +185,8 @@ body {
 }
 
 #piretti-wrapper {
-	/*left: 73.5vw;
-	top: 57vh;*/
-	left: 1010px;
-    top: 404px;
+	left: 73.5vw;
+	top: 57vh;
 }
 
 #bertoiaII-wrapper {
