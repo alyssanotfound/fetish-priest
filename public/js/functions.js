@@ -9,13 +9,13 @@ var ww;
 jQuery(document).ready(function($) {
   ww = document.body.clientWidth;
   //don't add hover shop effect if mobile bc is sticky
-  if (ww >= 600) {
+  if (ww >= 960) {
     $("<style type='text/css'> .shop p:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
     // $("<style type='text/css'> .shop:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
   }
   var alterClass = function() {
     ww = document.body.clientWidth;
-    if (ww < 600) {
+    if (ww < 960) {
       v = "mobile";
       console.log("m resize, now: " + v);
       var vh = window.innerHeight * 0.01;
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
             textOnDesktop = true;
        });
       $(".dash").addClass("remove");
-    } else if (ww >= 601) {
+    } else if (ww >= 961) {
       v = "desktop";
       console.log("d resize, now: " + v);
       $(".textbox").removeClass("hidden");
@@ -85,7 +85,7 @@ $(function() {
         //make divs visible
         $(".wrap").removeClass('remove');
         //turn on buttons but first turn off textbox if its visible
-        if ($(".textbox").hasClass("hidden")==false && ww < 600) {
+        if ($(".textbox").hasClass("hidden")==false && ww < 960) {
             //textbox is already open, so close it
             $(".textbox").addClass("hidden");
             $('.info-button').css("background-image", "url(../assets/info-button.png");
