@@ -47,6 +47,9 @@ jQuery(document).ready(function($) {
       var position = $('.info-desktop').offset();
       var h = $('.info-desktop').outerHeight();
       var mTop = position.top + h;
+      //set shop buttons to be a percent of img width
+      // var unit = $("#background-img").width() * 0.01;
+      // document.documentElement.style.setProperty('--ut', `${unit}px`);
       $("#mc_embed_signup").css({'top': mTop  + 'px'});
       $(".yellowbox").outerHeight(((($(window).height())/3) - $(".shop").outerHeight()) +"px");
       $("#readmore").removeClass("hidden");

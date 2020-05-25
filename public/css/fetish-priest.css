@@ -173,6 +173,7 @@ body {
 
 #bertoia-wrapper {	
 	left: 13vw;
+	/*left: calc(var(--ut, 1vw) * 13);*/
 	top: 8vh;
 }
 
@@ -192,8 +193,8 @@ body {
 }
 
 #piretti-wrapper {
-	left: 48vw;
-	top: 57vh;
+	left: 47.5vw;
+	top: 56.5vh;
 }
 
 #bertoiaII-wrapper {
