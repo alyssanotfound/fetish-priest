@@ -11,6 +11,7 @@ jQuery(document).ready(function($) {
   //don't add hover shop effect if mobile bc is sticky
   if (ww >= 600) {
     $("<style type='text/css'> .shop p:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
+    // $("<style type='text/css'> .shop:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
   }
   var alterClass = function() {
     ww = document.body.clientWidth;

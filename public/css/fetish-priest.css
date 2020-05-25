@@ -597,10 +597,10 @@ a.yellow {
     	padding-top: 0.35vw;
 	}
 
-	.shop:hover {
+	/*.shop:hover {
 		background-color: yellow;
 		color: blue;
-	}
+	}*/
 
 	p.yellowbox {
 		left: 0;
