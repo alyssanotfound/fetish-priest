@@ -114,6 +114,13 @@ body {
 	background-position: center center;
 }
 
+#buttons-div {
+	position: absolute;
+	height: 100%;
+	width: 75%;
+	left: 25%;
+}
+
 .circle {
 	position: relative;
 	background: url("../assets/button.png") left center no-repeat; 
@@ -152,7 +159,7 @@ body {
 
 .wrap {
 	position: absolute;
-	width: 130px;
+	width: 145px;
 	height: 70px;
 }
 
@@ -165,32 +172,32 @@ body {
 }
 
 #bertoia-wrapper {	
-	left: 38.2vw;
+	left: 13vw;
 	top: 8vh;
 }
 
 #knoll-wrapper {
-	left: 42vw;
+	left: 16.5vw;
 	top: 28vh;
 }
 
 #paulin-wrapper {
-	left: 54vw;
+	left: 29vw;
 	top: 35vh;
 }
 
 #hesterberg-wrapper {
-	left: 57vw;
+	left: 31vw;
 	top: 72vh;
 }
 
 #piretti-wrapper {
-	left: 73.5vw;
+	left: 48vw;
 	top: 57vh;
 }
 
 #bertoiaII-wrapper {
-	left: 88.5vw;
+	left: 63vw;
 	top: 72vh;
 }
 
