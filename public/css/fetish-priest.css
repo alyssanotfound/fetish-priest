@@ -729,7 +729,7 @@ a.yellow {
 		padding-left: 0.5vw;
 		background-color: yellow;
 		width: 63.33vw;
-		height: calc(var(--vh, 1vh) * 4.165);
+		height: calc(var(--vh, 1vh) * 8.43);
 	}
 
 	.mc-field-group:first-child {
