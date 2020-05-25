@@ -172,7 +172,7 @@ body {
 }
 
 #bertoia-wrapper {	
-	left: 13vw;
+	left: 14vw;
 	/*left: calc(var(--ut, 1vw) * 13);*/
 	top: 8vh;
 }
@@ -198,7 +198,7 @@ body {
 }
 
 #bertoiaII-wrapper {
-	left: 63vw;
+	left: 62vw;
 	top: 72vh;
 }
 
@@ -534,6 +534,7 @@ a.yellow {
 		height: 22px;
 		width: 22px;
 		background-size: 22px 22px;
+		cursor: pointer;
 	}
 
 	.break {
