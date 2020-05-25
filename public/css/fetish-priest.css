@@ -733,15 +733,11 @@ a.yellow {
 	}
 
 	.mc-field-group:first-child {
-		border-top: dashed;
-		border-color: yellow;
-		border-width: 0.05vw;
+		border: none;
 	}
 
 	.mc-field-group:nth-child(2) {
-		border-bottom: dashed;
-		border-color: yellow;
-		border-width: 0.05vw;
+		border: none;
 	}
 
 	#mc_embed_signup #mc-embedded-subscribe {
