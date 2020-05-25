@@ -721,7 +721,7 @@ a.yellow {
 		margin-right:0.5vw;
 		width: 59vw;
 		padding: 0;
-    	height: calc(var(--vh, 1vh) * 4.165);
+    	height: calc(var(--vh, 1vh) * 4.1);
     	padding-left: 2vw;
 	}
 
