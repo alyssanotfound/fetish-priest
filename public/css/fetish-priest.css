@@ -217,6 +217,7 @@ body {
 	top: 25vh;
 	right: 0;
 	width: 49vw;
+	height: 0;
 	/*pointer-events:none;*/
 }
 
