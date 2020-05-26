@@ -133,6 +133,7 @@ body {
 	width: 30px;
 	display: block;
 	margin: auto;
+	cursor: pointer;
 }
 
 .desc {
@@ -202,13 +203,13 @@ body {
 	top: 72vh;
 }
 
-#cir {
+/*#cir {
 	position: absolute;
 	width: 10px;
 	height: 10px;
 	background: red;
 	border-radius: 50%;
-}
+}*/
 
 
 .info-wrapper {
@@ -216,6 +217,11 @@ body {
 	top: 25vh;
 	right: 0;
 	width: 49vw;
+	/*pointer-events:none;*/
+}
+
+#info-wrapper > * {
+	pointer-events: all;
 }
 
 .logo {
@@ -541,7 +547,6 @@ a.yellow {
 		height: 22px;
 		width: 22px;
 		background-size: 22px 22px;
-		cursor: pointer;
 	}
 
 	.break {

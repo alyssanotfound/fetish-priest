@@ -8,10 +8,10 @@ var ww;
 //CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
   ww = document.body.clientWidth;
-  var y1 = ($("#background-img").outerHeight())/2;
-  var x1 = ($("#background-img").width())/2;
-  $("#cir").css({'top': y1 + 'px'});
-  $("#cir").css({'left': x1 + 'px'});
+  // var y1 = ($("#background-img").outerHeight())/2;
+  // var x1 = ($("#background-img").width())/2;
+  // $("#cir").css({'top': y1 + 'px'});
+  // $("#cir").css({'left': x1 + 'px'});
   //don't add hover shop effect if mobile bc is sticky
   if (ww >= 600) {
     $("<style type='text/css'> .shop p:hover{ background-color: yellow; color: blue;} </style>").appendTo("head");
