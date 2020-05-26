@@ -202,6 +202,13 @@ body {
 	top: 72vh;
 }
 
+#cir {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: red;
+	border-radius: 50%;
+}
 
 
 .info-wrapper {
