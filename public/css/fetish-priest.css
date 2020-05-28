@@ -669,6 +669,11 @@ a.yellow {
 		display: none;
 	}
 
+	#buttons-div {
+		width: 100%;
+		left: 0;
+	}
+
 	div.textbox {
 		width: 50vw;
 		right: 0;
@@ -799,33 +804,33 @@ a.yellow {
 	}
 	
 	#bertoia-wrapper {
-		left: 6%;
-		top: 54%;
+		left: 11vw;
+		top: 60vh;
 	}
 
 	#knoll-wrapper {
-		left: 14%;
-		top: 62%;
+		left: 14vw;
+		top: 69vh;
 	}
 
 	#paulin-wrapper {
-		left: 36%;
-		top: 68%;
+		left: 31vw;
+		top: 72vh;
 	}
 
 	#hesterberg-wrapper {
-		left: 30%;
-		top: 85%;
+		left: 34vw;
+		top: 89vh;
 	}
 
 	#piretti-wrapper {
-		left: 60%;
-		top: 77%;
+		left: 54.5vw;
+		top: 82vh;
 	}
 
 	#bertoiaII-wrapper {
-		left: 64%;
-		top: 85%;
+		left: 72vw;
+		top: 86vh;
 	}
 }
 
