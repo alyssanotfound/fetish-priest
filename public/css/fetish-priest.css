@@ -810,22 +810,22 @@ a.yellow {
 
 	#knoll-wrapper {
 		left: 11vw;
-		top: calc(var(--vh, 1vh) * 69);
+		top: calc(var(--vh, 1vh) * 68);
 	}
 
 	#paulin-wrapper {
 		left: 28vw;
-		top: calc(var(--vh, 1vh) * 72);
+		top: calc(var(--vh, 1vh) * 71);
 	}
 
 	#hesterberg-wrapper {
 		left: 31vw;
-		top: calc(var(--vh, 1vh) * 89);
+		top: calc(var(--vh, 1vh) * 87);
 	}
 
 	#piretti-wrapper {
 		left: 51.5vw;
-		top: calc(var(--vh, 1vh) * 82);
+		top: calc(var(--vh, 1vh) * 81);
 	}
 
 	#bertoiaII-wrapper {
