@@ -824,13 +824,13 @@ a.yellow {
 	}
 
 	#piretti-wrapper {
-		left: 48vw;
-		top: calc(var(--vh, 1vh) * 77);
+		left: 47vw;
+		top: calc(var(--vh, 1vh) * 79);
 	}
 
 	#bertoiaII-wrapper {
-		left: 62vw;
-		top: calc(var(--vh, 1vh) * 81);
+		left: 63vw;
+		top: calc(var(--vh, 1vh) * 82);
 	}
 }
 
