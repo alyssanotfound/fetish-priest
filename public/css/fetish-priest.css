@@ -814,8 +814,8 @@ a.yellow {
 	}
 
 	#paulin-wrapper {
-		left: 22vw;
-		top: calc(var(--vh, 1vh) * 67);
+		left: 23vw;
+		top: calc(var(--vh, 1vh) * 70);
 	}
 
 	#hesterberg-wrapper {
