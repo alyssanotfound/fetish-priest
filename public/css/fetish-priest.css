@@ -815,12 +815,12 @@ a.yellow {
 
 	#paulin-wrapper {
 		left: 23vw;
-		top: calc(var(--vh, 1vh) * 70);
+		top: calc(var(--vh, 1vh) * 71);
 	}
 
 	#hesterberg-wrapper {
-		left: 28vw;
-		top: calc(var(--vh, 1vh) * 81);
+		left: 29vw;
+		top: calc(var(--vh, 1vh) * 87);
 	}
 
 	#piretti-wrapper {
