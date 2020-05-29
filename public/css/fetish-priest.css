@@ -804,13 +804,13 @@ a.yellow {
 	}
 	
 	#bertoia-wrapper {
-		left: 0;
+		left: 1;
 		top: calc(var(--vh, 1vh) * 60);
 	}
 
 	#knoll-wrapper {
-		left: 0;
-		top: calc(var(--vh, 1vh) * 69);
+		left: 1;
+		top: calc(var(--vh, 1vh) * 72);
 	}
 
 	#paulin-wrapper {
