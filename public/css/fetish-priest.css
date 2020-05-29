@@ -819,12 +819,12 @@ a.yellow {
 	}
 
 	#hesterberg-wrapper {
-		left: 29vw;
+		left: 28vw;
 		top: calc(var(--vh, 1vh) * 87);
 	}
 
 	#piretti-wrapper {
-		left: 45vw;
+		left: 43vw;
 		top: calc(var(--vh, 1vh) * 79);
 	}
 
