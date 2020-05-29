@@ -810,7 +810,7 @@ a.yellow {
 
 	#knoll-wrapper {
 		left: 3vw;
-		top: calc(var(--vh, 1vh) * 80);
+		top: calc(var(--vh, 1vh) * 88);
 	}
 
 	#paulin-wrapper {
