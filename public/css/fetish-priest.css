@@ -808,32 +808,32 @@ a.yellow {
 	}
 	
 	#bertoia-wrapper {
-		left: 8vw;
+		left: 10vw;
 		top: calc(var(--vh, 1vh) * 60);
 	}
 
 	#knoll-wrapper {
-		left: 2vw;
+		left: 4vw;
 		top: calc(var(--vh, 1vh) * 72);
 	}
 
 	#paulin-wrapper {
-		left: 29vw;
+		left: 31vw;
 		top: calc(var(--vh, 1vh) * 71);
 	}
 
 	#hesterberg-wrapper {
-		left: 27vw;
+		left: 29vw;
 		top: calc(var(--vh, 1vh) * 87);
 	}
 
 	#piretti-wrapper {
-		left: 45.5vw;
+		left: 47.5vw;
 		top: calc(var(--vh, 1vh) * 81.5);
 	}
 
 	#bertoiaII-wrapper {
-		left: 66vw;
+		left: 68vw;
 		top: calc(var(--vh, 1vh) * 80);
 	}
 }
