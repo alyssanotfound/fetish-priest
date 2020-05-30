@@ -650,7 +650,7 @@ a.yellow {
 	.wrap {
 		width: 20vw;
 	}
-	
+
 	.info-mobile {
 		line-height: 2.6vw;
 		width: 100vw;
@@ -808,32 +808,32 @@ a.yellow {
 	}
 	
 	#bertoia-wrapper {
-		left: 2vw;
+		left: 6vw;
 		top: calc(var(--vh, 1vh) * 60);
 	}
 
 	#knoll-wrapper {
-		left: -4vw;
+		left: 0vw;
 		top: calc(var(--vh, 1vh) * 72);
 	}
 
 	#paulin-wrapper {
-		left: 23vw;
+		left: 27vw;
 		top: calc(var(--vh, 1vh) * 71);
 	}
 
 	#hesterberg-wrapper {
-		left: 21vw;
+		left: 25vw;
 		top: calc(var(--vh, 1vh) * 87);
 	}
 
 	#piretti-wrapper {
-		left: 39.5vw;
+		left: 43.5vw;
 		top: calc(var(--vh, 1vh) * 81.5);
 	}
 
 	#bertoiaII-wrapper {
-		left: 60vw;
+		left: 64vw;
 		top: calc(var(--vh, 1vh) * 80);
 	}
 }
