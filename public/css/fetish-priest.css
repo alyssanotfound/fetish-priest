@@ -647,6 +647,10 @@ a.yellow {
 		top: calc(var(--vh, 1vh) * 11.67);
 	}
 
+	.wrap {
+		width: 20vw;
+	}
+	
 	.info-mobile {
 		line-height: 2.6vw;
 		width: 100vw;
