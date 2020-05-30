@@ -809,7 +809,7 @@ a.yellow {
 	}
 
 	#knoll-wrapper {
-		left: 0vw;
+		left: -2vw;
 		top: calc(var(--vh, 1vh) * 72);
 	}
 
