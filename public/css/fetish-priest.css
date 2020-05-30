@@ -825,7 +825,7 @@ a.yellow {
 
 	#piretti-wrapper {
 		left: 39.5vw;
-		top: calc(var(--vh, 1vh) * 81.5);
+		top: calc(var(--vh, 1vh) * 80);
 	}
 
 	#bertoiaII-wrapper {
