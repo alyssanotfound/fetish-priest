@@ -819,7 +819,7 @@ a.yellow {
 	}
 
 	#hesterberg-wrapper {
-		left: 28vw;
+		left: 21vw;
 		top: calc(var(--vh, 1vh) * 87);
 	}
 
