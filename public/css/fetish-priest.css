@@ -808,7 +808,7 @@ a.yellow {
 	}
 	
 	#bertoia-wrapper {
-		left: 10vw;
+		left: 12vw;
 		top: calc(var(--vh, 1vh) * 60);
 	}
 
@@ -823,17 +823,17 @@ a.yellow {
 	}
 
 	#hesterberg-wrapper {
-		left: 29vw;
+		left: 27vw;
 		top: calc(var(--vh, 1vh) * 87);
 	}
 
 	#piretti-wrapper {
-		left: 47.5vw;
+		left: 48.5vw;
 		top: calc(var(--vh, 1vh) * 81.5);
 	}
 
 	#bertoiaII-wrapper {
-		left: 68vw;
+		left: 70vw;
 		top: calc(var(--vh, 1vh) * 80);
 	}
 }
