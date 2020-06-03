@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
     ww = document.body.clientWidth;
     if (ww < 600) {
       v = "mobile";
-      console.log("m resize, now: " + v);
+      // console.log("m resize, now: " + v);
       var vh = window.innerHeight * 0.01;
       //set the value in the --vh custom property to the root of the document
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
       $(".dash").addClass("remove");
     } else if (ww >= 601) {
       v = "desktop";
-      console.log("d resize, now: " + v);
+      // console.log("d resize, now: " + v);
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
       var topM = $(".shop").outerHeight();
@@ -53,7 +53,6 @@ jQuery(document).ready(function($) {
       var h = $('.info-desktop').outerHeight();
       var mTop = position.top + h;
       //set shop buttons to be a percent of img width
-      // var unit = $("#background-img").width() * 0.01;
       // document.documentElement.style.setProperty('--ut', `${unit}px`);
       $("#mc_embed_signup").css({'top': mTop  + 'px'});
       $(".yellowbox").outerHeight(((($(window).height())/3) - $(".shop").outerHeight()) +"px");
