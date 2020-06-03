@@ -31,6 +31,7 @@ jQuery(document).ready(function($) {
       $(".logo").css({'left': dis  + 'px'});
       //remove inline height assigned in desktop mode, if there
       $(".textbox").css("height","");
+      $(".textbox").css("top","");
       $("#mc_embed_signup").css({'top':''});
       $(".logo").css({'top':''});
       $(".textbox").addClass("hidden");
