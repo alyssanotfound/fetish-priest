@@ -529,11 +529,16 @@ a.yellow {
 		padding: 0;
 		background: url("../imgs/fetish-priest-vert.jpg") no-repeat center; 
 		height: 100%;
+		width: 100%;
 		background-size: 100%;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+	}
+
+	body {
+		width: 100%;
 	}
 
 	#background-img {
