@@ -203,22 +203,12 @@ body {
 	top: 72vh;
 }
 
-/*#cir {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	background: red;
-	border-radius: 50%;
-}*/
-
-
 .info-wrapper {
 	position: absolute;
 	top: 25vh;
 	right: 0;
 	width: 49vw;
 	height: 0;
-	/*pointer-events:none;*/
 }
 
 #info-wrapper > * {
@@ -520,7 +510,6 @@ a.yellow {
  color: black;
 }
 /* END MAILING LIST SUBSCRIPTION */
-
 
 @media only screen and (max-width: 600px) {
 	
