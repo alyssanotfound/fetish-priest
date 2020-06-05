@@ -70,9 +70,9 @@ $(function() {
       var ww = document.body.clientWidth;
     	if (buttonson == true) {  		
     		$( ".circle" ).addClass('hidden');
-    		//just in case any descriptions are on, loop thru and make sure they are all hidden
+    		//if any descriptions are on, loop thru and make sure they are hidden
     		$(".desc").addClass("hidden");
-        //remove item divs so they arent overlapping other info
+        //remove item divs so they aren't overlapping other info
         $(".wrap").addClass('remove');
         if (v == "mobile") {
           $(".shop").removeClass('yellowOn'); 
@@ -83,7 +83,7 @@ $(function() {
     	} else if (buttonson == false) {
         //make divs visible
         $(".wrap").removeClass('remove');
-        //turn on buttons but first turn off textbox if its visible
+        //turn on buttons but first turn off textbox if it's visible
         if ($(".textbox").hasClass("hidden")==false && ww < 600) {
             //textbox is already open, so close it
             $(".textbox").addClass("hidden");
