@@ -107,7 +107,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: center center;
+	background-position: left top;
 }
 
 #buttons-div {
@@ -115,6 +115,16 @@ body {
 	height: 100%;
 	width: 75%;
 	left: 25%;
+}
+
+#button-resizer {
+	width: calc(100vh / 0.63889);
+	height: 100vh;
+	/*background: red;*/
+	/*opacity: 0.5;*/
+	top: 0;
+	position: absolute;
+	left: 0;
 }
 
 .circle {
@@ -169,8 +179,8 @@ body {
 }
 
 #bertoia-wrapper {	
-	left: 14vw;
-	top: 8vh;
+	left: 25.5%;
+	top: 32%;
 }
 
 #knoll-wrapper {
