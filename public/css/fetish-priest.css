@@ -118,10 +118,12 @@ body {
 }
 
 #button-resizer {
-	width: calc(100vh / 0.63889);
-	height: 100vh;
-	/*background: red;*/
-	/*opacity: 0.5;*/
+	/*width: calc(100vh / 0.63889);*/
+	/*height: 100vh;*/
+	width: 100%;
+	height: calc(75vw * 0.63889);
+	background: green;
+	opacity: 0.5;
 	top: 0;
 	position: absolute;
 	left: 0;
@@ -179,33 +181,33 @@ body {
 }
 
 #bertoia-wrapper {	
-	left: 25.5%;
-	top: 32%;
+	left: 19%;
+	top: 9%;
 }
 
 #knoll-wrapper {
-	left: 16.5vw;
-	top: 28vh;
+	left: 22%;
+	top: 27.7%;
 }
 
 #paulin-wrapper {
-	left: 29vw;
-	top: 35vh;
+	left: 39%;
+	top: 34.2%;
 }
 
 #hesterberg-wrapper {
-	left: 31vw;
-	top: 72vh;
+	left: 42.5%;
+	top: 72%;
 }
 
 #piretti-wrapper {
-	left: 47.5vw;
-	top: 56.5vh;
+	left: 62.5%;
+	top: 56.5%;
 }
 
 #bertoiaII-wrapper {
-	left: 62vw;
-	top: 72vh;
+	left: 81.8%;
+	top: 73%;
 }
 
 .info-wrapper {
@@ -515,6 +517,61 @@ a.yellow {
  color: black;
 }
 /* END MAILING LIST SUBSCRIPTION */
+
+@media screen and (max-aspect-ratio: 1012 / 485) {
+
+	#button-resizer {
+		width: calc(100vh / 0.63889);
+		height: 100vh;
+		background: red;
+		opacity: 0.5;
+		top: 0;
+		position: absolute;
+		left: 0;
+	}
+
+	/*#bertoia-wrapper {	
+		left: 19%;
+		top: 9%;
+	}
+
+	#knoll-wrapper {
+		left: 22%;
+		top: 27.7%;
+	}
+
+	#paulin-wrapper {
+		left: 39%;
+		top: 34.2%;
+	}
+
+	#hesterberg-wrapper {
+		left: 42.5%;
+		top: 72%;
+	}
+
+	#piretti-wrapper {
+		left: 62.5%;
+		top: 56.5%;
+	}
+
+	#bertoiaII-wrapper {
+		left: 81.8%;
+		top: 73%;
+	}*/
+}
+
+/*@media screen and (aspect-ratio: 4320 / 2760) {
+	#button-resizer {
+		width: calc(100vh / 0.63889);
+		height: 100vh;
+		background: yellow;
+		opacity: 0.5;
+		top: 0;
+		position: absolute;
+		left: 0;
+	}
+}*/
 
 @media only screen and (max-width: 600px) {
 	
