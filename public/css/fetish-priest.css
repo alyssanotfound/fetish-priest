@@ -107,7 +107,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-position: left top;
+	background-position: center center;
 }
 
 #buttons-div {
@@ -124,7 +124,7 @@ body {
 	height: calc(75vw * 0.63889);
 	background: green;
 	opacity: 0.5;
-	top: 0;
+	top: calc( calc(calc(75vw * 0.63889) - 100%)/-2 );
 	position: absolute;
 	left: 0;
 }
@@ -527,7 +527,7 @@ a.yellow {
 		opacity: 0.5;
 		top: 0;
 		position: absolute;
-		left: 0;
+		left: calc( calc(calc(100vh / 0.63889) - 100%)/-2 );
 	}
 
 	/*#bertoia-wrapper {	
