@@ -837,8 +837,10 @@ a.yellow {
 	}
 	
 	#bertoia-wrapper {
-		left: 12vw;
-		top: calc(var(--vh, 1vh) * 60);
+		/*left: 12vw;
+		top: calc(var(--vh, 1vh) * 60);*/
+		left: 15%;
+		top: 59%;
 	}
 
 	#knoll-wrapper {
