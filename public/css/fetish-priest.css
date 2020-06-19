@@ -575,7 +575,7 @@ a.yellow {
 
 @media only screen and (max-width: 600px) {
 	
-	html {
+	/*html {
 		margin: 0px;
 		padding: 0;
 		background: url("../imgs/fetish-priest-vert.jpg") no-repeat center; 
@@ -586,11 +586,36 @@ a.yellow {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
-	}
+	}*/
 
 	body {
 		width: 100%;
 	}
+
+	#background-img {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background: url("../imgs/fetish-priest-vert.jpg"); 
+		background-size: 100%;
+		left: 0;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	#button-resizer {
+		width: calc(100vh / 1.78);
+		height: 100vh;
+		background: pink;
+		opacity: 0.5;
+		top: 0;
+		position: absolute;
+		left: calc( calc(calc(100vh / 1.78) - 100%)/-2 );
+	}-
 
 	#background-img {
 		display: none;
