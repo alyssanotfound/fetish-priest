@@ -530,6 +530,7 @@ a.yellow {
 		position: absolute;
 		left: calc( calc(calc(100vh / 0.63889) - 100%)/-2 );
 	}
+}
 
 /*VERTICAL TABLET AND MOBILE VIEW*/
 @media only screen and (max-width: 1024px) and (orientation: portrait) {	
