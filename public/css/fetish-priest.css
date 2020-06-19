@@ -518,6 +518,7 @@ a.yellow {
 }
 /* END MAILING LIST SUBSCRIPTION */
 
+/*DESKTOP, WHEN BKGROUND IMG COVER HAS CONSTANT HEIGHT*/
 @media screen and (max-aspect-ratio: 1012 / 485) {
 
 	#button-resizer {
@@ -530,51 +531,8 @@ a.yellow {
 		left: calc( calc(calc(100vh / 0.63889) - 100%)/-2 );
 	}
 
-	/*#bertoia-wrapper {	
-		left: 19%;
-		top: 9%;
-	}
-
-	#knoll-wrapper {
-		left: 22%;
-		top: 27.7%;
-	}
-
-	#paulin-wrapper {
-		left: 39%;
-		top: 34.2%;
-	}
-
-	#hesterberg-wrapper {
-		left: 42.5%;
-		top: 72%;
-	}
-
-	#piretti-wrapper {
-		left: 62.5%;
-		top: 56.5%;
-	}
-
-	#bertoiaII-wrapper {
-		left: 81.8%;
-		top: 73%;
-	}*/
-}
-
-/*@media screen and (aspect-ratio: 4320 / 2760) {
-	#button-resizer {
-		width: calc(100vh / 0.63889);
-		height: 100vh;
-		background: yellow;
-		opacity: 0.5;
-		top: 0;
-		position: absolute;
-		left: 0;
-	}
-}*/
-
-/*@media only screen and (max-width: 600px) {*/
-@media only screen and (max-width: 1024px) {	
+/*VERTICAL TABLET AND MOBILE VIEW*/
+@media only screen and (max-width: 1024px) and (max-aspect-ratio: 3 / 4) {	
 	html {
 		margin: 0;
 		padding: 0;
@@ -602,18 +560,19 @@ a.yellow {
 	}
 
 	#button-resizer {
-		width: calc(100vh / 1.78);
-		height: 100vh;
+		width: 100%;
+		/*height: 100vh;*/
+		height: calc(100vw * 1.78);
 		background: pink;
 		opacity: 0.5;
-		top: 0;
+		left: 0;
 		position: absolute;
-		left: calc( calc(calc(100vh / 1.78) - 100%)/-2 );
-	}-
-
-	#background-img {
-		display: none;
+		top: calc( calc(calc(100vw * 1.78) - 100%)/-2 );
 	}
+
+	/*#background-img {
+		display: none;
+	}*/
 
 	.text {
 		font-size: 2.3vw;
