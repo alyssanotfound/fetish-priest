@@ -844,28 +844,28 @@ a.yellow {
 	}
 
 	#knoll-wrapper {
-		left: 4vw;
-		top: calc(var(--vh, 1vh) * 72);
+		left: 18%;
+		top: 65%;
 	}
 
 	#paulin-wrapper {
-		left: 31vw;
-		top: calc(var(--vh, 1vh) * 71);
+		left: 35%;
+		top: 67.5%;
 	}
 
 	#hesterberg-wrapper {
-		left: 27vw;
-		top: calc(var(--vh, 1vh) * 87);
+		left: 38%;
+		top: 81%;
 	}
 
 	#piretti-wrapper {
-		left: 48.5vw;
-		top: calc(var(--vh, 1vh) * 81.5);
+		left: 59%;
+		top: 75%;
 	}
 
 	#bertoiaII-wrapper {
-		left: 70vw;
-		top: calc(var(--vh, 1vh) * 80);
+		left: 78%;
+		top: 82%;
 	}
 }
 
