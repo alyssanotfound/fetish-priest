@@ -15,6 +15,7 @@ jQuery(document).ready(function($) {
   var alterClass = function() {
     ww = document.body.clientWidth;
     var orn = window.matchMedia("(orientation: portrait)").matches;
+    alert(orn);
     // console.log("this is orientation: " + orn);
     //less than 1024px wide and portrait, show mobile
     if (ww < 1024 && orn == true) {
