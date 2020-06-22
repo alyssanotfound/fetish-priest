@@ -181,18 +181,18 @@ body {
 }
 
 #bertoia-wrapper {	
-	left: 19%;
-	top: 9%;
+	left: 21%;
+	top: 12%;
 }
 
 #knoll-wrapper {
-	left: 22%;
-	top: 27.7%;
+	left: 23%;
+	top: 30.5%;
 }
 
 #paulin-wrapper {
 	left: 39%;
-	top: 34.2%;
+	top: 37%;
 }
 
 #hesterberg-wrapper {
@@ -206,7 +206,7 @@ body {
 }
 
 #bertoiaII-wrapper {
-	left: 81.8%;
+	left: 79.8%;
 	top: 73%;
 }
 
@@ -531,6 +531,11 @@ a.yellow {
 		left: calc( calc(calc(100vh / 0.63889) - 100%)/-2 );
 	}
 }
+
+/*@media only screen and (max-width: 1024px) and (orientation: landscape) {
+	
+}*/
+
 
 /*VERTICAL TABLET AND MOBILE VIEW*/
 @media only screen and (max-width: 1024px) and (orientation: portrait) {	

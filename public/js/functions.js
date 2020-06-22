@@ -5,7 +5,7 @@ var textHover = false;
 var v;
 var ww;
 
-//CHECK BROWSER WIDTH, ADD/REMOVE CLASSES
+//CHECK BROWSER WIDTH AND ORIENTATION, ADD/REMOVE CLASSES
 jQuery(document).ready(function($) {
   ww = document.body.clientWidth;
   //don't add hover shop effect if mobile bc is sticky
@@ -14,7 +14,10 @@ jQuery(document).ready(function($) {
   }
   var alterClass = function() {
     ww = document.body.clientWidth;
-    if (ww < 1024) {
+    var orn = window.matchMedia("(orientation: portrait)").matches;
+    // console.log("this is orientation: " + orn);
+    //less than 1024px wide and portrait, show mobile
+    if (ww < 1024 && orn == true) {
       v = "mobile";
       var vh = window.innerHeight * 0.01;
       //set the value in the --vh custom property to the root of the document
@@ -35,7 +38,8 @@ jQuery(document).ready(function($) {
             textOnDesktop = true;
        });
       $(".dash").addClass("remove");
-    } else if (ww >= 1025) {
+    } else {
+      //less than 1024px wide and landscape, or greater than 1024px wide, show desktop
       v = "desktop";
       $(".textbox").removeClass("hidden");
       $(".textbox").height(($(window).height() - $(".shop").outerHeight()) +"px");
