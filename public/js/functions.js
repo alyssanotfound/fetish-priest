@@ -69,11 +69,11 @@ jQuery(document).ready(function($) {
   alterClass();
 });
 
-// $(function() {
-//   window.addEventListener("orientationchange", function() {
-//     alterClass();
-//   });
-// });
+$(function() {
+  window.addEventListener("orientationchange", function() {
+    alterClass();
+  });
+});
 
 //SHOP BUTTON
 $(function() {
