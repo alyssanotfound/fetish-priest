@@ -533,7 +533,7 @@ a.yellow {
 }
 
 /*@media only screen and (max-width: 1024px) and (orientation: landscape) {
-	
+
 }*/
 
 
@@ -851,8 +851,8 @@ a.yellow {
 	}
 
 	#knoll-wrapper {
-		left: 18%;
-		top: 65%;
+		left: 4%;
+		top: 68%;
 	}
 
 	#paulin-wrapper {
@@ -861,18 +861,18 @@ a.yellow {
 	}
 
 	#hesterberg-wrapper {
-		left: 38%;
+		left: 25%;
 		top: 81%;
 	}
 
 	#piretti-wrapper {
-		left: 59%;
+		left: 48%;
 		top: 75%;
 	}
 
 	#bertoiaII-wrapper {
-		left: 78%;
-		top: 82%;
+		left: 69%;
+		top: 74%;
 	}
 }
 
