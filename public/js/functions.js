@@ -19,6 +19,7 @@ jQuery(document).ready(function($) {
     // console.log("this is orientation: " + orn);
     //less than 1024px wide and portrait, show mobile
     if (ww < 1024 && orn == true) {
+      alert("run mobile js");
       v = "mobile";
       var vh = window.innerHeight * 0.01;
       //set the value in the --vh custom property to the root of the document
@@ -68,6 +69,11 @@ jQuery(document).ready(function($) {
   alterClass();
 });
 
+// $(function() {
+//   window.addEventListener("orientationchange", function() {
+//     alterClass();
+//   });
+// });
 
 //SHOP BUTTON
 $(function() {
