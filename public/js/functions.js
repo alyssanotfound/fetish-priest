@@ -65,9 +65,9 @@ jQuery(document).ready(function($) {
   $(window).resize(function(){
     alterClass();
   });
-  window.addEventListener("orientationchange", function() {
-    alterClass();
-  });
+  // window.addEventListener("orientationchange", function() {
+  //   alterClass();
+  // });
   //fire when page first loads:
   alterClass();
 });
