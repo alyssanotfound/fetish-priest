@@ -568,7 +568,6 @@ a.yellow {
 
 	#button-resizer {
 		width: 100%;
-		/*height: 100vh;*/
 		height: calc(100vw * 1.78);
 		background: pink;
 		opacity: 0.5;
@@ -576,10 +575,6 @@ a.yellow {
 		position: absolute;
 		top: calc( calc(calc(100vw * 1.78) - 100%)/-2 );
 	}
-
-	/*#background-img {
-		display: none;
-	}*/
 
 	.text {
 		font-size: 2.3vw;
@@ -844,8 +839,6 @@ a.yellow {
 	}
 	
 	#bertoia-wrapper {
-		/*left: 12vw;
-		top: calc(var(--vh, 1vh) * 60);*/
 		left: 15%;
 		top: 59%;
 	}
@@ -856,7 +849,7 @@ a.yellow {
 	}
 
 	#paulin-wrapper {
-		left: 35%;
+		left: 33%;
 		top: 67.5%;
 	}
 
