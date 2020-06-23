@@ -95,7 +95,7 @@ $(function() {
         //make divs visible
         $(".wrap").removeClass('remove');
         //turn on buttons but first turn off textbox if it's visible
-        if ($(".textbox").hasClass("hidden")==false && ww < 1024) {
+        if ($(".textbox").hasClass("hidden")==false && ww < 1024 && orn == true) {
             //textbox is already open, so close it
             $(".textbox").addClass("hidden");
             $('.info-button').css("background-image", "url(../assets/info-button.png");
