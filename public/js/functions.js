@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
   $(window).resize(function(){
     alterClass();
   });
-  //Fire it when the page first loads:
+  //fire when page first loads:
   alterClass();
 });
 

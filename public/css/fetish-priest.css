@@ -122,8 +122,8 @@ body {
 	/*height: 100vh;*/
 	width: 100%;
 	height: calc(75vw * 0.63889);
-	background: green;
-	opacity: 0.5;
+	/*background: green;*/
+	/*opacity: 0.5;*/
 	top: calc( calc(calc(75vw * 0.63889) - 100%)/-2 );
 	position: absolute;
 	left: 0;
@@ -524,8 +524,8 @@ a.yellow {
 	#button-resizer {
 		width: calc(100vh / 0.63889);
 		height: 100vh;
-		background: red;
-		opacity: 0.5;
+		/*background: red;*/
+		/*opacity: 0.5;*/
 		top: 0;
 		position: absolute;
 		left: calc( calc(calc(100vh / 0.63889) - 100%)/-2 );
@@ -569,8 +569,8 @@ a.yellow {
 	#button-resizer {
 		width: 100%;
 		height: calc(100vw * 1.78);
-		background: pink;
-		opacity: 0.5;
+		/*background: pink;*/
+		/*opacity: 0.5;*/
 		left: 0;
 		position: absolute;
 		top: calc( calc(calc(100vw * 1.78) - 100%)/-2 );
