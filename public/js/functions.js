@@ -114,6 +114,15 @@ $(function() {
 	});
 });
 
+$(function() {
+  window.addEventListener('orientationchange', function() {
+      if (window.orientation == 0 || window.orientation == 180) {
+          // Reset scroll position if in portrait mode.
+          window.scrollTo(0, 0);
+      }
+  }, false);
+});
+
 //INDIVIDUAL PRODUCT BUTTONS
 $(function() {
     $( ".circle" ).click(function() {
