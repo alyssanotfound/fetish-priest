@@ -63,14 +63,9 @@ jQuery(document).ready(function($) {
     };
   };
   $(window).resize(function(){
-    //test is resize triggers when orientation changes
-    alert("window resized");
+    //trigged when orientation changes too
     alterClass();
   });
-  // window.addEventListener("orientationchange", function() {
-  //   alterClass();
-  // });
-  //fire when page first loads:
   alterClass();
 });
 
